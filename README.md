@@ -8,11 +8,20 @@
 
 ## Sections in this document
 
-1. Setting up the Ardunio IDE for use with EBB42.
-2. Adding in required linbraries.
-3. Compiling and uploading source files using Ardunio IDE.
-4. Alternatively uploading pre-compiled binaries using STMCubeProgrammer software.
-5. Compiling ASCOM driver from source code.
-6. Alternatively using pre-compiled ASCOM driver installer.
-7. How to use ASCOM driver (Using N.I.N.A).
-8. Notes about INDI linus driver.
+Setting up the Ardunio IDE for use with EBB42.
+1. Install Ardunio IDE
+2. User board manager to add stm32duino
+  If still version 2.3.0 then extra steps
+   2A. Install GIT
+   2B. Go to folder. "%LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32"
+   2C. Delete file named "2.3.0"
+   2D. git clone https://github.com/stm32duino/Arduino_Core_STM32.git 2.3.0
+3. Adding in required linbraries.
+4. Install STM32cube
+5. Adding in required linbraries.
+6. Compiling and uploading source files using Ardunio IDE.
+7. Alternatively uploading pre-compiled binaries using STMCubeProgrammer software.
+8. Compiling ASCOM driver from source code.
+9. Alternatively using pre-compiled ASCOM driver installer.
+10. How to use ASCOM driver (Using N.I.N.A).
+11. Notes about INDI linus driver.
