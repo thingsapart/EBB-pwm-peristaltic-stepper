@@ -1,5 +1,7 @@
 # Realta Scope Tech EBB42 telescope focuser (version 1.2).
 
+![EBB42 Focuser](Images/Guide/PCB.png)
+
 ## Project goals.
 
 + Truley open source code i.e. do what you want with it.
