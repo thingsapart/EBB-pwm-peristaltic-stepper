@@ -12,10 +12,10 @@ Setting up the Ardunio IDE for use with EBB42.
 1. Install Ardunio IDE
 2. User board manager to add stm32duino
   If still version 2.3.0 then extra steps
-   -2A. Install GIT
-   -2B. Go to folder. "%LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32"
-   -2C. Delete file named "2.3.0"
-   -2D. git clone https://github.com/stm32duino/Arduino_Core_STM32.git 2.3.0
+   1. Install GIT
+   2. Go to folder. "%LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32"
+   3. Delete file named "2.3.0"
+   4. git clone https://github.com/stm32duino/Arduino_Core_STM32.git 2.3.0
 3. Adding in required linbraries.
 4. Install STM32cube
 5. Adding in required linbraries.
