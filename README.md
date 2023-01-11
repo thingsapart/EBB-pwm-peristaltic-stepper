@@ -56,7 +56,21 @@ I also made use of ferrules for terminating the dew heater wires used in the scr
 
 ![Exploded](Guide/Images/Exploded.png)
 
-### RCA Connectors
+### Step 1: RCA Connectors (Optional)
+
+If you plan on using the dew heater functionality you must fit them first as the EBB42 PCB will block access once its secured.
+
+### Step 2: Attach stepper motor wires to EBB42 PCB
+
+### Step 3: Fit EBB42 PCB
+
+### Step 4: Secure base plate to case using 4 M3 12mm bolts.
+
+### Step 5: Remove existing bolts from stepper motor
+
+### Step 6: Attach stepper motor wires (if needed)
+
+## Step 7: Secure motor to base plate using appropriate M3 bolts.
 
 ### Fitting PCB
 
