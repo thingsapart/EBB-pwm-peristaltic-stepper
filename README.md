@@ -1,4 +1,4 @@
-# Realta Scope Tech EBB42 telescope focuser (version 1.2).
+# Realta Scope Tech EBB42 telescope focuser
 
 ![EBB42 Focuser](Guide/Images/SideB.png)
 
