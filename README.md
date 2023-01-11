@@ -22,7 +22,7 @@ However, any NEMA stepper motor thicker than this will work but you are limited 
 
 ### BigTreeTech EBB42 
 
-There are two versions of this one with an accelerometer and one without, both will work but the accelerometer version is twice as expensive and no use of it is made in this project. 
+There are two versions of this, one with an accelerometer and one without, both will work but the accelerometer version is twice as expensive and no use of it is made in this project. 
 
 ![EBB42 Focuser PCB](Guide/Images/PCB.png)
 
