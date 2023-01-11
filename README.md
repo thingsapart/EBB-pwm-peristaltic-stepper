@@ -52,6 +52,14 @@ I also made use of ferrules for terminating the dew heater wires used in the scr
 
 ## What you need to 3D print.
 
+Only two parts need to be printed. Neither part requires supports and they were designed to be printed easily on a printer using an 0.8mm nozzle so should be easy prints on any printer using a smaller nozzle. 
+
+![Printer](Guide/Images/PrintBed.png)
+
+### Notes on filament type.
+
+Stepper motors will get warm when opperating and even when not moving they are being held in place by powered magnetic fields. They are designed to cope with very very high temperatures. The firmware provided does make use of the TMC2209's CoolStep technology which greatly lowers the current drawn when not moving however the motor will still get warm to the touch, around 40c to 50c are common. This means you really should think twice about using a filament such as PLA which will start going floppy around this temperature. PETG would be better but ABS or ASA would be best. 
+
 ## Assembling the case.
 
 ![Exploded](Guide/Images/Exploded.png)
