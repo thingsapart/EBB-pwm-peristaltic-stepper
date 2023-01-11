@@ -4,29 +4,29 @@
 
 ![EBB42 Focuser](Guide/Images/SideA.png)
 
-![EBB42 Focuser PCB](Guide/Images/PCB.png)
-
 ## Project goals.
 
 + Truley open source code i.e. do what you want with it.
 + Using open hardware only i.e. schematic available.
 + Firmware created using Arduino IDE with full guide to get it working with the EBB42.
 
-## Sections in this document
-
 ## What you need to buy.
 
-1. Stepper motor: I have used a 23mm thing Nema 17 stepper motor like this. 
+### Stepper motor
+
+I have used a 23mm thick Nema 17 stepper motor like this. 
 
 ![Nema 17](Guide/Images/17HS4023.png)
 
-However, any NEMA stepper motor thicker than this will work but you are limited to 1.5A per phase by the EBB42 stepper motor driver. Even thinner motors will work but you will have a hard time mounting them as the case will nowl most mounting brackets. 
+However, any NEMA stepper motor thicker than this will work but you are limited to 1.5A per phase by the EBB42 stepper motor driver. Even thinner motors will work but you will have a hard time mounting them as the case will foul most mounting brackets. 
 
-2. BigTreeTech EBB42: There are two versions of this one with an accelerometer and one without, both will work but the accelerometer version is twice as expensive and no use of it is made in this project. 
+### BigTreeTech EBB42 
+
+There are two versions of this one with an accelerometer and one without, both will work but the accelerometer version is twice as expensive and no use of it is made in this project. 
 
 ![EBB42 Focuser PCB](Guide/Images/PCB.png)
 
-2. If you want to use the dew heaters then you will need these RCA connectors.
+### If you want to use the dew heaters then you will need these RCA connectors.
 
 ![RCA Connector](Guide/Images/RCA_PANEL_MOUNT.png)
 
@@ -35,6 +35,10 @@ However, any NEMA stepper motor thicker than this will work but you are limited 
 ## Assembling the case.
 
 ![Exploded](Guide/Images/Exploded.png)
+
+### RCA Connectors
+
+### Fitting PCB
 
 Setting up the Ardunio IDE for use with EBB42.
 1. Install Ardunio IDE
@@ -52,4 +56,4 @@ Setting up the Ardunio IDE for use with EBB42.
 8. Compiling ASCOM driver from source code.
 9. Alternatively using pre-compiled ASCOM driver installer.
 10. How to use ASCOM driver (Using N.I.N.A).
-11. Notes about INDI linus driver.
+11. Notes about INDI linux driver.
