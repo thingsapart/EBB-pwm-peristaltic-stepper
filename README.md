@@ -14,6 +14,10 @@
 
 ## Sections in this document
 
+What you need to buy.
+1. Stepper motor
+2. If you want to use the dew heaters then you need something like. 
+
 Setting up the Ardunio IDE for use with EBB42.
 1. Install Ardunio IDE
 2. User board manager to add stm32duino
