@@ -40,7 +40,7 @@ The EBB42 focuser comes with all the accessories you need to connect it up it co
 
 However it is possible to crimp using Needle Nose Pliers. 
 
-https://www.youtube.com/watch?v=JsoqBS1-k7M
+[![](https://markdown-videos.deta/youtube/{JsoqBS1-k7M})](https://youtu.be/{JsoqBS1-k7M}) 
 
 I also made use of ferrules for terminating the dew heater wires used in the screw terminals.
 
