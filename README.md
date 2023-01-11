@@ -26,9 +26,25 @@ There are two versions of this one with an accelerometer and one without, both w
 
 ![EBB42 Focuser PCB](Guide/Images/PCB.png)
 
-### If you want to use the dew heaters then you will need these RCA connectors.
+### Optional: RCA connectors
+
+If you want to use the dew heaters then you will need these RCA connectors.
 
 ![RCA Connector](Guide/Images/RCA_PANEL_MOUNT.png)
+
+### Optional: Crimping tools and ferrules
+
+The EBB42 focuser comes with all the accessories you need to connect it up it comes with the cable fittings needed to be added to wires to fit in its sockets and the metal pins too. However you will need to crimp these onto the wires yourself and a dupont compatable crimping tool greatly helps.
+
+![Dupont crimping](Guide/Images/DuPontCrimping.png)
+
+However it is possible to crimp using Needle Nose Pliers. 
+
+https://www.youtube.com/watch?v=JsoqBS1-k7M
+
+I also made use of ferrules for terminating the dew heater wires used in the screw terminals.
+
+![Dupont crimping](Guide/Images/FerruleCrimping.png)
 
 ## What you need to 3D print.
 
