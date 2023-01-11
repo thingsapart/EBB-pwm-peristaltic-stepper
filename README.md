@@ -14,9 +14,27 @@
 
 ## Sections in this document
 
-What you need to buy.
-1. Stepper motor
-2. If you want to use the dew heaters then you need something like. 
+## What you need to buy.
+
+1. Stepper motor: I have used a 23mm thing Nema 17 stepper motor like this. 
+
+![Nema 17uide/Images/17HS4023.png)
+
+However, any NEMA stepper motor thicker than this will work but you are limited to 1.5A per phase by the EBB42 stepper motor driver. Even thinner motors will work but you will have a hard time mounting them as the case will nowl most mounting brackets. 
+
+2. BigTreeTech EBB42: There are two versions of this one with an accelerometer and one without, both will work but the accelerometer version is twice as expensive and no use of it is made in this project. 
+
+![EBB42 Focuser PCB](Guide/Images/PCB.png)
+
+2. If you want to use the dew heaters then you will need these RCA connectors.
+
+![RCA Connector](Guide/Images/RCA_PANEL_MOUNT.png)
+
+## What you need to 3D print.
+
+## Assembling the case.
+
+![Exploded](Guide/Images/Exploded.png)
 
 Setting up the Ardunio IDE for use with EBB42.
 1. Install Ardunio IDE
