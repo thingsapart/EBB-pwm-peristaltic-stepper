@@ -18,7 +18,7 @@
 
 1. Stepper motor: I have used a 23mm thing Nema 17 stepper motor like this. 
 
-![Nema 17uide/Images/17HS4023.png)
+![Nema 17](Guide/Images/17HS4023.png)
 
 However, any NEMA stepper motor thicker than this will work but you are limited to 1.5A per phase by the EBB42 stepper motor driver. Even thinner motors will work but you will have a hard time mounting them as the case will nowl most mounting brackets. 
 
