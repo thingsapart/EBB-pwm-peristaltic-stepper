@@ -28,7 +28,7 @@ There are two versions of this, one with an accelerometer and one without, both 
 
 ### M3 Hex bolts
 
-To secure the EBB42 you will need 4 12mm long M3 bolts while the ones for the stepper mottor depend on how thick the one you buy is. The original bolts will not reach through the combined thickness of the case and motor so you will need 4 replacement ones. I found that for the 23mm thick motor I could use 22mm long bolts.  
+To secure the EBB42 you will need 4 12mm long M3 bolts while the ones for the stepper motor depend on how thick the one you buy is. The original bolts will not reach through the combined thickness of the case and motor so you will need 4 replacement ones. I found that for the 23mm thick motor I could use 22mm long bolts.  
 
 ### Optional: RCA connectors
 
