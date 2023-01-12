@@ -88,7 +88,18 @@ The latest Ardunio IDE can be found here.
 
 https://www.arduino.cc/en/software
 
-2. User board manager to add stm32duino
+When you start the IDE for the first time you will be asked to allow it access to the internet, please allow it to do this as it will download various drivers and you will need this functionality later on to install some libaries. 
+
+### User board manager to add stm32duino
+
+Use the menu's at the top to add the STM32 boards to the IDE.
+
+![Board manager](Guide/Images/BoardsManager.png)
+
+This opens a panel on the left hand side, in this search for "STM". 
+
+![STM Search](Guide/Images/STMSearch.png)
+
   If still version 2.3.0 then extra steps
    1. Install GIT
    2. Go to folder. "%LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32"
