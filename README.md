@@ -176,12 +176,28 @@ And upload method
 
 Finally the board is ready to be used in Arduino IDE!
 
-3. Adding in required linbraries.
-4. Install STM32cube
-5. Adding in required linbraries.
-6. Compiling and uploading source files using Ardunio IDE.
-7. Alternatively uploading pre-compiled binaries using STMCubeProgrammer software.
-8. Compiling ASCOM driver from source code.
-9. Alternatively using pre-compiled ASCOM driver installer.
-10. How to use ASCOM driver (Using N.I.N.A).
-11. Notes about INDI linux driver.
+### Install STM32CubeProgrammer
+
+We still aren't done installing software, when the Arduino IDE uploads the file to the EBB42 board it will first try to compile it and when it does that it reaches out to the STM32 compiler which wont exist yet on your computer! In order for this to work we need to install STM32CubeProgrammer which can be downloaded from.
+
+https://www.st.com/en/development-tools/stm32cubeprog.html
+
+### Adding in required linbraries.
+
+### Compiling and uploading source files using Ardunio IDE.
+
+### Alternatively uploading pre-compiled binaries using STMCubeProgrammer software.
+
+## Compiling ASCOM driver from source code.
+
+#### Download Visual Studio Community
+
+
+
+### Alternatively using pre-compiled ASCOM driver installer.
+
+## How to use ASCOM driver (Using N.I.N.A).
+
+## Notes about INDI linux driver.
+
+Lol I don't know how!
