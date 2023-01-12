@@ -106,7 +106,11 @@ Please note the version in the bottom left hand corner, if this is 2.4.0 or late
 
 #### (2.3.0 Extra steps) Go to the Arduino STM hardware folder and delete files.
 
-Paste this into a windows explorer address bar "%LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0"
+Paste this into a windows explorer address bar %LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0
+
+![Delete files](Guide/Images/Deletefiles.png)
+
+Highlight all of the files and delete them.
 
 #### (2.3.0 Extra steps) Download the latest stm32duino
 
