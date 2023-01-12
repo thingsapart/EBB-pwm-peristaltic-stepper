@@ -80,9 +80,8 @@ If you plan on using the dew heater functionality you must fit them first as the
 
 ## Step 7: Secure motor to base plate using appropriate M3 bolts.
 
-### Fitting PCB
+### Setting up the Ardunio IDE for use with EBB42.
 
-Setting up the Ardunio IDE for use with EBB42.
 1. Install Ardunio IDE
 2. User board manager to add stm32duino
   If still version 2.3.0 then extra steps
