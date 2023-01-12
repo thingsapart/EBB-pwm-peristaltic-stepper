@@ -106,7 +106,9 @@ Please note the version in the bottom left hand corner, if this is 2.4.0 or late
 
 #### (2.3.0 Extra steps) Go to the Arduino STM hardware folder and delete files.
 
-Paste this into a windows explorer address bar %LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0
+Paste this into a windows explorer address bar 
+
+%LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0
 
 ![Delete files](Guide/Images/Deletefiles.png)
 
@@ -117,6 +119,46 @@ Highlight all of the files and delete them.
 Download the files from the stm32duino github repository https://github.com/stm32duino/Arduino_Core_STM32
 
 ![stm32duino download](Guide/Images/STMGithubDownload.png)
+
+#### (2.3.0 Extra steps) Unzip downloaded file and copy its contents
+
+![Extract files](Guide/Images/ExtractAll.png)
+
+Highlight all of the unzipped files and copy them
+
+![Copy files](Guide/Images/CopyFiles.png)
+
+#### (2.3.0 Extra steps) Paste files into Arduino STM hardware folder
+
+Now select the other windows explorer window and paste the files.
+
+![Paste Files](Guide/Images/PasteFiles.png)
+
+#### (2.3.0 Extra steps and maybe 2.4.0 and beyound?) Fix bug stopping EEPROM from working.
+
+The current stm32duino entry for the EBB42 board doesn't allow you to use the built in EEPROM storage so we need to edit a file to allow this. When 2.4.0 is released this might be fixed but its worth checking anyway.
+
+Open and explorer windown and go to folder 
+
+%LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0\variants\STM32G0xx\G0B1C(B-C-E)(T-U)_G0C1C(C-E)(T-U)
+
+In this folder there should be a file called variant_EBB42_V1_1.h, we need to edit this so right click on it, windows probably wont know what to do with this type of file so you need to select "choose another app".
+
+![Choose another app](Guide/Images/ChooseAnotherApp.png)
+
+And select notepad from the list
+
+![Choose notepad](Guide/Images/NotePadSelect.png)
+
+You then need to paste in the follow text 
+
+#define FLASH_BANK_NUMBER       FLASH_BANK_1
+
+![EEPROM Work](Guide/Images/EEPROM_WORK.png)
+
+Save the file and we are done setting up the 2.3.0 Extra steps.
+
+### Select the board in Ardunio IDE
 
 3. Adding in required linbraries.
 4. Install STM32cube
