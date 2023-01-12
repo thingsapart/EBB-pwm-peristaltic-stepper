@@ -92,13 +92,15 @@ When you start the IDE for the first time you will be asked to allow it access t
 
 ### User board manager to add stm32duino
 
-Use the menu's at the top to add the STM32 boards to the IDE.
+Use the "tools" menu at the top to add the STM32 boards to the IDE.
 
 ![Board manager](Guide/Images/BoardsManager.png)
 
 This opens a panel on the left hand side, in this search for "STM". 
 
 ![STM Search](Guide/Images/STMSearch.png)
+
+Please note the version in the bottom left hand corner, if this is 2.4.0 or later then thats great however, if its not then 2.4.0 still hasn't been released and you will need to download the latest version from GitHub. 
 
   If still version 2.3.0 then extra steps
    1. Install GIT
