@@ -212,7 +212,13 @@ Can just open bin file and upload it using STMCubeProgrammer, still need to set 
 
 ### Download Visual Studio Community
 
-Website link
+Visual studio comunity is a free version of visual studio
+
+https://visualstudio.microsoft.com/downloads/
+
+Clicking the "Free download" button will take you to another site that will automatically start downloading the application. As its a ".exe" file your web browser might ask for your permission.
+
+When VS studio Community starts to install it will ask you questions about what you want to use it for, answer x, y, x
 
 ### Run as administator
 
@@ -220,9 +226,15 @@ Explain its a DLL and need to be admin to register it in windows
 
 ### Open project
 
+In the earlier step you downloaded the Realta EBB42 telescope focuser repository, the VS project is located in that repository in folder XYZ, open the file named todo_file_name.
+
 ### Configure for "Any CPU"
 
+Who how to change to "Any CPU" compiler. Todo need to check this actually works for a fresh install otherwise ask to compile for x64 unless they know they are running an older CPU. 
+
 ### Rebuild project
+
+Show screen shots of rebuilding.
 
 ### Alternatively using pre-compiled ASCOM driver installer.
 
