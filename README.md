@@ -102,11 +102,18 @@ This opens a panel on the left hand side, in this search for "STM".
 
 Please note the version in the bottom left hand corner, if this is 2.4.0 or later then thats great however, if its not then 2.4.0 still hasn't been released and you will need to download the latest version from GitHub. 
 
-  If still version 2.3.0 then extra steps
-   1. Install GIT
-   2. Go to folder. "%LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32"
-   3. Delete file named "2.3.0"
-   4. git clone https://github.com/stm32duino/Arduino_Core_STM32.git 2.3.0
+### If still version 2.3.0 then follow these extra steps
+
+#### (2.3.0 Extra steps) Go to the Arduino STM hardware folder and delete files.
+
+Paste this into a windows explorer address bar "%LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0"
+
+#### (2.3.0 Extra steps) Download the latest stm32duino
+
+Download the files from the stm32duino github repository https://github.com/stm32duino/Arduino_Core_STM32
+
+![stm32duino download](Guide/Images/STMGithubDownload.png)
+
 3. Adding in required linbraries.
 4. Install STM32cube
 5. Adding in required linbraries.
