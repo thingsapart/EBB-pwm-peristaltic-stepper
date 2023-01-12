@@ -158,7 +158,23 @@ You then need to paste in the follow text
 
 Save the file and we are done setting up the 2.3.0 Extra steps.
 
-### Select the board in Ardunio IDE
+### Select the board in Arduino IDE
+
+Back in the Arduino IDE use the menus to finally select the EBB42 board. 
+
+First select the menu item "3D printer boards"
+
+![Choose 3D Printers](Guide/Images/Select3DPrinterBoards.png)
+
+Then use the newly added menus to select the board part number 
+
+![Choose EBB42](Guide/Images/BoardPartNumber.png)
+
+And upload method
+
+![Choose Upload method](Guide/Images/STM32UploadedMethod.png)
+
+Finally the board is ready to be used in Arduino IDE!
 
 3. Adding in required linbraries.
 4. Install STM32cube
