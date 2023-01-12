@@ -184,15 +184,45 @@ https://www.st.com/en/development-tools/stm32cubeprog.html
 
 ### Adding in required linbraries.
 
+Add picture of menu option
+
+Add search
+
+Need only TMCStepper? 
+
+### Download and Unzip Realta EBB42 telescope focuser repository
+
+Show image of download link
+
+Show unzip a file
+
 ### Compiling and uploading source files using Ardunio IDE.
+
+Show tick and arrow 
+
+describe difference
+
+Show how to set EBB42 into programming mode.
 
 ### Alternatively uploading pre-compiled binaries using STMCubeProgrammer software.
 
+Can just open bin file and upload it using STMCubeProgrammer, still need to set EBB42 into programming mode.
+
 ## Compiling ASCOM driver from source code.
 
-#### Download Visual Studio Community
+### Download Visual Studio Community
 
+Website link
 
+### Run as administator
+
+Explain its a DLL and need to be admin to register it in windows
+
+### Open project
+
+### Configure for "Any CPU"
+
+### Rebuild project
 
 ### Alternatively using pre-compiled ASCOM driver installer.
 
