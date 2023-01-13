@@ -1,8 +1,8 @@
 # Realta Scope Tech EBB42 telescope focuser
 
-![EBB42 Focuser](Guide/Images/SideB.png)
+![EBB42 Focuser](Guide/Images/SideB2.png)
 
-![EBB42 Focuser](Guide/Images/SideA.png)
+![EBB42 Focuser](Guide/Images/SideA2.png)
 
 
 ## Project goals.
