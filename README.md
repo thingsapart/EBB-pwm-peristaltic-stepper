@@ -4,6 +4,7 @@
 
 ![EBB42 Focuser](Guide/Images/SideA.png)
 
+
 ## Project goals.
 
 + Truley open source code i.e. do what you want with it.
