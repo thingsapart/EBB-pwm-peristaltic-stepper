@@ -53,7 +53,7 @@ I also made use of ferrules for terminating the dew heater wires used in the scr
 
 ## What you need to 3D print.
 
-Only two parts need to be printed. Neither part requires supports and they were designed to be printed easily on a printer using an 0.8mm nozzle so should be easy prints on any printer using a smaller nozzle. 
+None of the parts need supports and they were designed to be printed easily on a printer using an 0.8mm nozzle so should be easy prints on any printer using a smaller nozzle. 
 
 ![Printer](Guide/Images/PrintBed.png)
 
