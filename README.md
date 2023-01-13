@@ -63,7 +63,7 @@ Stepper motors will get warm when opperating and even when not moving they are b
 
 ## Assembling the case.
 
-![Exploded](Guide/Images/Exploded.png)
+![Exploded](Guide/Images/Exploded2.png)
 
 ### Step 1: RCA Connectors (Optional)
 
