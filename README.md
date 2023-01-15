@@ -99,7 +99,21 @@ Attach the wires as shown to the "top" part of the case, as sateted earlier the 
 
 ![WiresH](Guide/Images/WiresH.png)
 
-### Step 3: Fit EBB42 PCB
+### Shorten the stepper motor wires
+
+Todo: Warning about checking the wiring order.
+
+Todo: Reminder about crimping
+
+Todo: Suggested length.
+
+![WiresE](Guide/Images/WiresE.png)
+
+### Fit shortened wires to PCB
+
+Todo: Picutre.
+
+### Fit EBB42 PCB
 
 Flip the PCB over and fit it to the "top" part of the case.
 
