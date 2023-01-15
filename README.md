@@ -67,36 +67,59 @@ Stepper motors will get warm when opperating and even when not moving they are b
 
 ### Step 1: RCA Connectors (Optional)
 
+Cut two sets of wires to 8cm in length. I have used silicone wire as its extremly flexible. I have used 22AWG wire, you need to check what amperage your dew heaters take and also note that the RCA connectors themselves are only rated to 2 Amps. Most modern dew straps use way less than 1 Amp unless they are very large.
+
+Dew straps are really just large resistors this means that there is no need to worry about polarity however most (all?) dew heaters on the market make the center pin positive and the outer negative so I have continued that here. 
+
+Why RCA connectors for dew heaters? Lol no idea but thats what the ones sold today use!
+
 ![WiresA](Guide/Images/WiresA.png)
+
+Tin the ends of the wires and connectors. 
 
 ![WiresB](Guide/Images/WiresB.png)
 
+Solder the wires and connectors together.
+
 ![WiresC](Guide/Images/WiresC.png)
+
+I have used heat shrink here but there is enough clearance inside the case to not need it.
 
 ![WiresD](Guide/Images/WiresD.png)
 
-![WiresE](Guide/Images/WiresE.png)
+Attach the RCA connectors to the provide holders, its much easier to fit the case if the negative is at the bottom, make sure that each one has that connector on the opposite side from the other. The two are identical and can be flipped to fit in whichever mounting position needed.
 
 ![WiresF](Guide/Images/WiresF.png)
 
+Slide the wires through the guide holes and then fit the holder in the provided slot, they will probably need a bit of firm guidance. Depending on your printers tollerances you might fin these want to come out or lean to the side but that will be sorted when we fit the case.
+
 ![WiresG](Guide/Images/WiresG.png)
+
+Attach the wires as shown to the "top" part of the case, as sateted earlier the exact polarity doesn't matter but we will wire the center postion to positive as per current convention. On the EBB v1.1 and v1.2 boards this is the right most position when the PCB is viewed from the "top". 
 
 ![WiresH](Guide/Images/WiresH.png)
 
-
 ### Step 3: Fit EBB42 PCB
+
+Flip the PCB over and fit it to the "top" part of the case.
 
 ![WiresI](Guide/Images/WiresI.png)
 
 ### Step 4: Secure base plate to case using 4 M3 12mm bolts.
 
+Todo: Picture!
+
 ### Step 5: Remove existing bolts from stepper motor
+
+Beware chinesium. 
 
 ### Step 6: Attach stepper motor wires (if needed)
 
 ![WiresJ](Guide/Images/WiresJ.png)
 
 ### Step 7: Secure motor to base plate using appropriate M3 bolts.
+
+Todo: Picture!
 
 ## Setting up the Ardunio IDE for use with EBB42.
 
