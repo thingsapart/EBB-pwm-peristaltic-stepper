@@ -67,9 +67,25 @@ Stepper motors will get warm when opperating and even when not moving they are b
 
 ### Step 1: RCA Connectors (Optional)
 
-If you plan on using the dew heater functionality you must fit them first as the EBB42 PCB will block access once its secured.
+![WiresA](Guide/Images/WiresA.png)
 
-### Step 2: Attach stepper motor wires to EBB42 PCB
+![WiresB](Guide/Images/WiresB.png)
+
+![WiresC](Guide/Images/WiresC.png)
+
+![WiresD](Guide/Images/WiresD.png)
+
+![WiresE](Guide/Images/WiresE.png)
+
+![WiresF](Guide/Images/WiresF.png)
+
+![WiresG](Guide/Images/WiresG.png)
+
+![WiresH](Guide/Images/WiresH.png)
+
+![WiresI](Guide/Images/WiresI.png)
+
+![WiresJ](Guide/Images/WiresJ.png)
 
 ### Step 3: Fit EBB42 PCB
 
