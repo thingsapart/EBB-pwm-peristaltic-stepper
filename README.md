@@ -83,17 +83,18 @@ Stepper motors will get warm when opperating and even when not moving they are b
 
 ![WiresH](Guide/Images/WiresH.png)
 
-![WiresI](Guide/Images/WiresI.png)
-
-![WiresJ](Guide/Images/WiresJ.png)
 
 ### Step 3: Fit EBB42 PCB
+
+![WiresI](Guide/Images/WiresI.png)
 
 ### Step 4: Secure base plate to case using 4 M3 12mm bolts.
 
 ### Step 5: Remove existing bolts from stepper motor
 
 ### Step 6: Attach stepper motor wires (if needed)
+
+![WiresJ](Guide/Images/WiresJ.png)
 
 ### Step 7: Secure motor to base plate using appropriate M3 bolts.
 
