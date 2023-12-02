@@ -87,7 +87,7 @@ Todo: Suggested length.
 
 ![Insert Nema 17](Guide/Images/InsertNema.png)
 
-![Screw Nema 17](Guide/Images/ScrewNema.png)
+![Screw Nema 17](Guide/Images/screwNema.png)
 
 ### Postion Face Plate
 
