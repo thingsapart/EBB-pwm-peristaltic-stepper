@@ -7,7 +7,7 @@
 
 + Truley open source code i.e. do what you want with it.
 + Using open hardware only i.e. schematic available.
-+ Firmware created using Arduino IDE with full guide to get it working with the EBB42.
++ Firmware created using Arduino IDE with full guide to get it working with the EBB.
 
 ## What you need to buy.
 
