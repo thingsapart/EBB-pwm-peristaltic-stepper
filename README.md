@@ -1,8 +1,6 @@
 # Realta Scope Tech EBBfocuser
 
-![EBB42 Focuser](Guide/Images/SideB2.png)
-
-![EBB42 Focuser](Guide/Images/SideA2.png)
+![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
 
 
 ## Project goals.
@@ -21,15 +19,15 @@ I have used a 23mm thick Nema 17 stepper motor like this 17HS4023.
 
 However, any NEMA stepper motor thicker than this will work but you are limited to 1.5A per phase by the EBB42 stepper motor driver. Even thinner motors will work but you will have a hard time mounting them as the case will foul most mounting brackets. The FreeCAD file containing the parts is included in this repository so can be edited to provide a spacer to pad out the difference in width if needed. 
 
-### BigTreeTech EBB42 
+### BigTreeTech EBB36 
 
 There are two versions of this, one with an accelerometer and one without, both will work but the accelerometer version is twice as expensive and no use of it is made in this project. 
 
-![EBB42 Focuser PCB](Guide/Images/PCB.png)
+![EBB36 Focuser PCB](Guide/Images/EBB36PCB.png)
 
 ### M3 Hex bolts
 
-To secure the EBB42 you will need 4 12mm long M3 bolts while the ones for the stepper motor depend on how thick the one you buy is. The original bolts will not reach through the combined thickness of the case and motor so you will need 4 replacement ones. I found that for the 23mm thick motor I could use 22mm long bolts.  
+To secure the EBB36 you will need 4 25mm long M3 bolts and 2 5mm M3 bolts while the ones for the stepper motor depend on how thick the one you buy is. The original bolts will not reach through the combined thickness of the case and motor so you will need 2 replacement ones. I found that for the 23mm thick motor I could use 22mm long bolts.  
 
 ### Optional: RCA connectors
 
@@ -39,7 +37,7 @@ If you want to use the dew heaters then you will need these RCA connectors.
 
 ### Optional: Crimping tools and ferrules
 
-The EBB42 focuser comes with all the accessories you need to connect it up it comes with the cable fittings needed to be added to wires to fit in its sockets and the metal pins too. However you will need to crimp these onto the wires yourself and a dupont compatable crimping tool greatly helps.
+The EBB36 focuser comes with all the accessories you need to connect it up it comes with the cable fittings needed to be added to wires to fit in its sockets and the metal pins too. However you will need to crimp these onto the wires yourself and a dupont compatable crimping tool greatly helps.
 
 ![Dupont crimping](Guide/Images/DuPontCrimping.png)
 
@@ -55,7 +53,7 @@ I also made use of ferrules for terminating the dew heater wires used in the scr
 
 None of the parts need supports and they were designed to be printed easily on a printer using an 0.8mm nozzle so should be easy prints on any printer using a smaller nozzle. 
 
-![Printer](Guide/Images/PrintBed.png)
+![Printer](Guide/Images/3DPrintBed.png)
 
 ### Notes on filament type.
 
@@ -63,7 +61,7 @@ Stepper motors will get warm when opperating and even when not moving they are b
 
 ## Assembling the case.
 
-![Exploded](Guide/Images/Exploded2.png)
+![Exploded](Guide/Images/EBB36Exploded.png)
 
 ### Step 1: RCA Connectors (Optional)
 
@@ -73,32 +71,6 @@ Dew straps are really just large resistors this means that there is no need to w
 
 Why RCA connectors for dew heaters? Lol no idea but thats what the ones sold today use!
 
-![WiresA](Guide/Images/WiresA.png)
-
-Tin the ends of the wires and connectors. 
-
-![WiresB](Guide/Images/WiresB.png)
-
-Solder the wires and connectors together.
-
-![WiresC](Guide/Images/WiresC.png)
-
-I have used heat shrink here but there is enough clearance inside the case to not need it.
-
-![WiresD](Guide/Images/WiresD.png)
-
-Attach the RCA connectors to the provide holders, its much easier to fit the case if the negative is at the bottom, make sure that each one has that connector on the opposite side from the other. The two are identical and can be flipped to fit in whichever mounting position needed.
-
-![WiresF](Guide/Images/WiresF.png)
-
-Slide the wires through the guide holes and then fit the holder in the provided slot, they will probably need a bit of firm guidance. Depending on your printers tollerances you might fin these want to come out or lean to the side but that will be sorted when we fit the case.
-
-![WiresG](Guide/Images/WiresG.png)
-
-Attach the wires as shown to the "top" part of the case, as sateted earlier the exact polarity doesn't matter but we will wire the center postion to positive as per current convention. On the EBB v1.1 and v1.2 boards this is the right most position when the PCB is viewed from the "top". 
-
-![WiresH](Guide/Images/WiresH.png)
-
 ### Shorten the stepper motor wires
 
 Todo: Warning about checking the wiring order.
@@ -107,35 +79,32 @@ Todo: Reminder about crimping
 
 Todo: Suggested length.
 
-![WiresE](Guide/Images/WiresE.png)
+### Heat set inserts
 
-### Fit shortened wires to PCB
+![Heat set inserts](Guide/Images/Threaded Inserts.png)
 
-Todo: Picutre.
+### Insert NEMA 17 stepper motor
 
-### Fit EBB42 PCB
+![Insert Nema 17](Guide/Images/InsertNema.png)
 
-Flip the PCB over and fit it to the "top" part of the case.
+![Screw Nema 17](Guide/Images/ScrewNema2.png)
 
-![WiresI](Guide/Images/WiresI.png)
+### Postion Face Plate
 
-### Step 4: Secure base plate to case using 4 M3 12mm bolts.
+![Postion Face Plate](Guide/Images/FacePlate.png)
 
-Todo: Picture!
+![Postion Face Plates](Guide/Images/FacePlate2.png)
 
-### Step 5: Remove existing bolts from stepper motor
+### Fit EBB36 PCB
 
-Beware chinesium. 
+![Fit PCB](Guide/Images/ScrewPCB.png)
 
-### Step 6: Attach stepper motor wires (if needed)
+### Fit RCA connector
 
-![WiresJ](Guide/Images/WiresJ.png)
+![FitRCA.png](Guide/Images/ScrewPCB.png)
 
-### Step 7: Secure motor to base plate using appropriate M3 bolts.
 
-Todo: Picture!
-
-## Setting up the Ardunio IDE for use with EBB42.
+## Setting up the Ardunio IDE for use with EBB36.
 
 ### Install the Arduino IDE.
 
