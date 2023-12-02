@@ -1,3 +1,22 @@
+Todo: Better blurb at start
+
+Todo: What you need to 3D print needs to say that some parts need supports, add picture showing support painting
+
+Todo: Step 1: RCA Connectors (Optional), adjust for EBB36 RCA wires.
+
+Todo: Shorten the stepper motor wires whole section
+
+Todo: Arduino Library section lol spelling mistake need to add downloading the github repository
+
+Todo: Compiling and uploading source files using Ardunio IDE, need section about putting into DFU mode.
+
+Todo: Using STMCube
+
+Todo: Installing ASCOM driver
+
+Todo: How to use with ASCOM.
+
+
 # Realta Scope Tech EBBfocuser
 
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
