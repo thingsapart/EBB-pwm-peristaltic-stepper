@@ -81,13 +81,13 @@ Todo: Suggested length.
 
 ### Heat set inserts
 
-![Heat set inserts](Guide/Images/Threaded Inserts.png)
+![Heat set inserts](Guide/Images/ThreadedInserts.png)
 
 ### Insert NEMA 17 stepper motor
 
 ![Insert Nema 17](Guide/Images/InsertNema.png)
 
-![Screw Nema 17](Guide/Images/ScrewNema2.png)
+![Screw Nema 17](Guide/Images/ScrewNema.png)
 
 ### Postion Face Plate
 
