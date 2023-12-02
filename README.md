@@ -167,7 +167,7 @@ Then use the newly added menus to select the board part number
 
 And upload method
 
-![Choose Upload method](Guide/Images/STM32UploadedMethod.png)
+![Choose Upload method](Guide/Images/UploadMethod.png)
 
 Finally the board is ready to be used in Arduino IDE!
 
