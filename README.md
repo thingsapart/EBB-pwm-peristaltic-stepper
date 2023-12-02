@@ -101,7 +101,7 @@ Todo: Suggested length.
 
 ### Fit RCA connector
 
-![FitRCA.png](Guide/Images/ScrewPCB.png)
+![Fit RCA](Guide/Images/FitRCA.png)
 
 
 ## Setting up the Ardunio IDE for use with EBB36.
