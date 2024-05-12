@@ -164,13 +164,21 @@ We still aren't done installing software, when the Arduino IDE uploads the file 
 
 https://www.st.com/en/development-tools/stm32cubeprog.html
 
-### Adding in required linbraries.
+### Adding in required libraries.
 
-Add picture of menu option
+In order to comunicate with the TMC2209 stepper driver on the EBB32 PCB we need computer code, I didn't write it myself I used a library that was written by teemuatlut, here's a link to his projects github https://github.com/teemuatlut/TMCStepper however you won't need to download anything from there as we can do that via the Arduino IDE itself. 
 
-Add search
+To do this we use the manage libraries function from the Sketch menu option
 
-Need only TMCStepper? 
+![Choose manage libraries](Guide/Images/ManageLibraries.png)
+
+Type TMCStepper into the search box and then install the latest version.
+
+![Search for TMXStepper](Guide/Images/TMCStepperLibrary.png)
+
+The console in the bottom right will show success when installation is successful. 
+
+![Console shows success](Guide/Images/ConsoleSuccess.png)
 
 ### Download and Unzip Realta EBB42 telescope focuser repository
 
