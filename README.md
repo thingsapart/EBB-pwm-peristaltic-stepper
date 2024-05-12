@@ -108,10 +108,11 @@ Todo: Suggested length.
 
 ![Fit PCB](Guide/Images/ScrewPCB.png)
 
-### Fit RCA connector
+### Todo: Insert motor wire connector
 
-![Fit RCA](Guide/Images/FitRCA.png)
+### Fit top of case
 
+![Fit PCB](Guide/Images/ScewTopCase.png)
 
 ## Setting up the Ardunio IDE for use with EBB36.
 
