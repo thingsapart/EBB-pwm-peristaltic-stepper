@@ -50,8 +50,6 @@ There are two versions of this, one with an accelerometer and one without, both 
 
 To secure the EBB36 you will need 4 25mm long M3 bolts and 2 5mm M3 bolts while the ones for the stepper motor depend on how thick the one you buy is. The original bolts will not reach through the combined thickness of the case and motor so you will need 2 replacement ones. I found that for the 23mm thick motor I could use 22mm long bolts.  
 
-![RCA Connector](Guide/Images/RCA_PANEL_MOUNT.png)
-
 ### Optional: Crimping tools and ferrules
 
 The EBB36 focuser comes with all the accessories you need to connect it up it comes with the cable fittings needed to be added to wires to fit in its sockets and the metal pins too. However you will need to crimp these onto the wires yourself and a dupont compatable crimping tool greatly helps.
