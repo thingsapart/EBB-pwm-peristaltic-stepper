@@ -50,10 +50,6 @@ There are two versions of this, one with an accelerometer and one without, both 
 
 To secure the EBB36 you will need 4 25mm long M3 bolts and 2 5mm M3 bolts while the ones for the stepper motor depend on how thick the one you buy is. The original bolts will not reach through the combined thickness of the case and motor so you will need 2 replacement ones. I found that for the 23mm thick motor I could use 22mm long bolts.  
 
-### Optional: RCA connectors
-
-If you want to use the dew heaters then you will need these RCA connectors.
-
 ![RCA Connector](Guide/Images/RCA_PANEL_MOUNT.png)
 
 ### Optional: Crimping tools and ferrules
@@ -84,14 +80,6 @@ Stepper motors will get warm when opperating and even when not moving they are b
 
 ![Exploded](Guide/Images/EBB36Exploded.png)
 
-### Step 1: RCA Connectors (Optional)
-
-Cut two sets of wires to 8cm in length. I have used silicone wire as its extremly flexible. I have used 22AWG wire, you need to check what amperage your dew heaters take and also note that the RCA connectors themselves are only rated to 2 Amps. Most modern dew straps use way less than 1 Amp unless they are very large.
-
-Dew straps are really just large resistors this means that there is no need to worry about polarity however most (all?) dew heaters on the market make the center pin positive and the outer negative so I have continued that here. 
-
-Why RCA connectors for dew heaters? Lol no idea but thats what the ones sold today use!
-
 ### Shorten the stepper motor wires
 
 Todo: Warning about checking the wiring order.
@@ -99,10 +87,6 @@ Todo: Warning about checking the wiring order.
 Todo: Reminder about crimping
 
 Todo: Suggested length.
-
-### Heat set inserts
-
-![Heat set inserts](Guide/Images/ThreadedInserts.png)
 
 ### Insert NEMA 17 stepper motor
 
