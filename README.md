@@ -68,9 +68,13 @@ I also made use of ferrules for terminating the dew heater wires used in the scr
 
 ## What you need to 3D print.
 
-None of the parts need supports and they were designed to be printed easily on a printer using an 0.8mm nozzle so should be easy prints on any printer using a smaller nozzle. 
+The were designed to be printed easily on a printer using an 0.8mm nozzle so should be easy prints on any printer using a smaller nozzle. 
 
 ![Printer](Guide/Images/3DPrintBed.png)
+
+The bottom section of the case needs supports to print well, I used the support paint tool and the smart fill option to select the faces needing supports.
+
+![Needs supports](Guide/Images/NeedsSupports.png)
 
 ### Notes on filament type.
 
