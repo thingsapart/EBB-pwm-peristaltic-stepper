@@ -4,10 +4,6 @@ Todo: One of the printed parts does need supports.
 
 Todo: Better blurb at start
 
-Todo: What you need to 3D print needs to say that some parts need supports, add picture showing support painting
-
-Todo: Step 1: RCA Connectors (Optional), adjust for EBB36 RCA wires.
-
 Todo: Shorten the stepper motor wires whole section
 
 Todo: Arduino Library section lol spelling mistake need to add downloading the github repository
@@ -114,7 +110,7 @@ Todo: Suggested length.
 
 ![Fit PCB](Guide/Images/ScewTopCase.png)
 
-## Setting up the Ardunio IDE for use with EBB36.
+## Setting up the Arduino IDE for use with EBB36.
 
 ### Install the Arduino IDE.
 
