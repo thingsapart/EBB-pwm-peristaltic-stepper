@@ -1,5 +1,7 @@
 Todo: Redo as no need for threaded inserts.
 
+Todo: One of the printed parts does need supports.
+
 Todo: Better blurb at start
 
 Todo: What you need to 3D print needs to say that some parts need supports, add picture showing support painting
