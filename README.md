@@ -182,9 +182,19 @@ The console in the bottom right will show success when installation is successfu
 
 ### Download and Unzip Realta EBB42 telescope focuser repository
 
-Show image of download link
+Now we need to download the code and other files in this repository, on the main page there is a green "<> Code" button.
 
-Show unzip a file
+![GITHub download link](Guide/Images/CodeDownloadZIP.png)
+
+clicking it will give you the oprion to download a zip file, click that. This will result in a zip folder appearing in your downloads folder, right click on that an choose "Extract All..."
+
+![Extract All](Guide/Images/DownloadedZip1.png)
+
+This will show a dialog box asking you where to unzip the file, leave the defaults but do click the "Shpw extracted files when complete" and click the "Extract" button
+
+![Save it where?](Guide/Images/DownloadedZip2.png)
+
+This should open a window showing a file structure similar to the image below.
 
 ### Compiling and uploading source files using Ardunio IDE.
 
