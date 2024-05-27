@@ -1,0 +1,117 @@
+Imports System.Runtime.InteropServices
+Imports System.Windows.Forms
+Imports ASCOM.EBB42
+Imports ASCOM.Utilities
+
+<ComVisible(False)> _
+Public Class SetupDialogForm
+
+    Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click ' OK button event handler
+        ' Persist new values of user settings to the ASCOM profile
+        Try
+            Focuser.comPort = ComboBoxComPort.SelectedItem ' Update the state variables with results from the dialogue
+        Catch
+            ' Ignore any errors here in case the PC does not have any COM ports that can be selected
+        End Try
+        Focuser.traceState = chkTrace.Checked
+        If Focuser.connectedState = True Then
+            While Focuser.isBusy = True
+                Threading.Thread.Sleep(200)
+            End While
+
+            Focuser.isBusy = True
+
+            Focuser.objSerial.Transmit("G6" + " " + CurrentBox.Value.ToString + "#")
+            Threading.Thread.Sleep(200)
+            Focuser.objSerial.Transmit("G5" + " " + MotorPos.Value.ToString + "#")
+            Threading.Thread.Sleep(200)
+            Focuser.objSerial.Transmit("G8" + " " + NoSteps.SelectedItem.ToString() + "#")
+            Threading.Thread.Sleep(200)
+            Focuser.objSerial.Transmit("G10" + " " + HeaterVal.Value.ToString + "#")
+            Threading.Thread.Sleep(200)
+
+            Focuser.isBusy = False
+
+        End If
+        Me.DialogResult = System.Windows.Forms.DialogResult.OK
+        Me.Close()
+    End Sub
+
+    Private Sub Cancel_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel_Button.Click 'Cancel button event handler
+        Me.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.Close()
+    End Sub
+
+    Private Sub ShowAscomWebPage(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.DoubleClick, PictureBox1.Click
+        ' Click on ASCOM logo event handler
+        Try
+            System.Diagnostics.Process.Start("https://ascom-standards.org/")
+        Catch noBrowser As System.ComponentModel.Win32Exception
+            If noBrowser.ErrorCode = -2147467259 Then
+                MessageBox.Show(noBrowser.Message)
+            End If
+        Catch other As System.Exception
+            MessageBox.Show(other.Message)
+        End Try
+    End Sub
+
+    Private Sub SetupDialogForm_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load ' Form load event handler
+        ' Retrieve current values of user settings from the ASCOM Profile
+        InitUI()
+    End Sub
+
+    Private Sub InitUI()
+        chkTrace.Checked = Focuser.traceState
+        ' set the list of com ports to those that are currently available
+        ComboBoxComPort.Items.Clear()
+        ComboBoxComPort.Items.AddRange(System.IO.Ports.SerialPort.GetPortNames())       ' use System.IO because it's static
+        ' select the current port if possible
+        If ComboBoxComPort.Items.Contains(Focuser.comPort) Then
+            ComboBoxComPort.SelectedItem = Focuser.comPort
+        End If
+
+        If Focuser.connectedState = True Then
+
+            While Focuser.isBusy = True
+                Threading.Thread.Sleep(200)
+            End While
+
+            Focuser.isBusy = True
+
+
+            Focuser.objSerial.Transmit("G7" + "#" + vbCrLf)
+            Threading.Thread.Sleep(200)
+
+            Dim s As String
+            s = Focuser.objSerial.ReceiveTerminated("#")
+            s = s.Replace("#", "")
+            CurrentBox.Enabled = True
+            CurrentBox.Value = s
+
+            Focuser.objSerial.Transmit("G4" + "#" + vbCrLf)
+            Threading.Thread.Sleep(200)
+
+            s = Focuser.objSerial.ReceiveTerminated("#")
+            s = s.Replace("#", "")
+            MotorPos.Enabled = True
+            MotorPos.Value = s
+
+            Focuser.objSerial.Transmit("G9" + "#" + vbCrLf)
+            Threading.Thread.Sleep(200)
+
+            s = Focuser.objSerial.ReceiveTerminated("#")
+            s = s.Replace("#", "")
+            NoSteps.Enabled = True
+            NoSteps.SelectedItem = s
+
+            Focuser.isBusy = False
+
+        Else
+            CurrentBox.Enabled = False
+            MotorPos.Enabled = False
+            NoSteps.Enabled = False
+        End If
+
+    End Sub
+
+End Class
