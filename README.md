@@ -126,9 +126,7 @@ Go to file -> preferences and add stm32duino
 
 ![Board manager](Guide/Images/ArduinoPreferences.png)
 
-and add 
-
-[https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started]() to the "additional Boards Managers" section at the bottom. Wait for the definitions to download
+and add https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started to the "additional Boards Managers" section at the bottom. Wait for the definitions to download
 
 ### User board manager to add stm32duino
 
