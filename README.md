@@ -6,6 +6,8 @@ Todo: Better blurb at start
 
 Todo: Shorten the stepper motor wires whole section
 
+Todo: need to add #define FLASH_BANK_NUMBER	FLASH_BANK_1 to file C:\Users\willi\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0\variants\STM32G0xx\G0B1C(B-C-E)(T-U)_G0C1C(C-E)(T-U)\variant_EBB42_V1_1.h
+
 Todo: Arduino Library section lol spelling mistake need to add downloading the github repository
 
 Todo: Compiling and uploading source files using Ardunio IDE, need section about putting into DFU mode.
