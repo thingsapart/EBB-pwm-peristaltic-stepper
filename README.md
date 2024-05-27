@@ -10,8 +10,6 @@ Todo: need to add #define FLASH_BANK_NUMBER	FLASH_BANK_1 to file C:\Users\willi\
 
 Todo: Arduino Library section lol spelling mistake need to add downloading the github repository
 
-Todo: Compiling and uploading source files using Ardunio IDE, need section about putting into DFU mode.
-
 Todo: Using STMCube
 
 Todo: Installing ASCOM driver
