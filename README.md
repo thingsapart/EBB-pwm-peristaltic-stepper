@@ -267,7 +267,7 @@ We are now ready to upload the arduino code to the EBB36 however we must first p
 
 Once this id done the EBB36 can be put into upload mode by pressing two buttons on the PCB, you can do this either by removing the case or using two tooth picks and a little trial and error.
 
-![click hold click](Guide/Images/PutPCBintoUploadModee.png) 
+![click hold click](Guide/Images/PutPCBintoUploadMode.png) 
 
 You need to press and hold the button closest to the port panel and then click the other button once and release both. You should here a beep again as the device disconnects again.
 
