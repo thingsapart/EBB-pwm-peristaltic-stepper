@@ -29,11 +29,17 @@ Public Class SetupDialogForm
             Threading.Thread.Sleep(200)
             Focuser.objSerial.Transmit("G10" + " " + HeaterVal.Value.ToString + "#")
             Threading.Thread.Sleep(200)
+            If MotorEngaged.Checked = True Then
+                Focuser.objSerial.Transmit("G12 1#")
+            Else
+                Focuser.objSerial.Transmit("G12 0#")
+            End If
+            Threading.Thread.Sleep(200)
 
-            Focuser.isBusy = False
+                Focuser.isBusy = False
 
-        End If
-        Me.DialogResult = System.Windows.Forms.DialogResult.OK
+            End If
+            Me.DialogResult = System.Windows.Forms.DialogResult.OK
         Me.Close()
     End Sub
 
@@ -104,12 +110,36 @@ Public Class SetupDialogForm
             NoSteps.Enabled = True
             NoSteps.SelectedItem = s
 
+
+            Focuser.objSerial.Transmit("G11" + "#" + vbCrLf)
+            Threading.Thread.Sleep(200)
+
+            s = Focuser.objSerial.ReceiveTerminated("#")
+            s = s.Replace("#", "")
+            HeaterVal.Enabled = True
+            HeaterVal.Value = (s)
+
+
+            Focuser.objSerial.Transmit("G13" + "#" + vbCrLf)
+            Threading.Thread.Sleep(200)
+
+            s = Focuser.objSerial.ReceiveTerminated("#")
+            s = s.Replace("#", "")
+            MotorEngaged.Enabled = True
+            If s = "1" Then
+                MotorEngaged.Checked = True
+            Else
+                MotorEngaged.Checked = False
+            End If
+
             Focuser.isBusy = False
 
         Else
             CurrentBox.Enabled = False
             MotorPos.Enabled = False
             NoSteps.Enabled = False
+            MotorEngaged.Enabled = False
+            HeaterVal.Enabled = False
         End If
 
     End Sub

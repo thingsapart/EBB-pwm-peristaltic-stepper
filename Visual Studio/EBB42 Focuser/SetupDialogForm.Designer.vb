@@ -38,6 +38,7 @@ Partial Class SetupDialogForm
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.MotorEngaged = New System.Windows.Forms.CheckBox()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CurrentBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,7 +54,7 @@ Partial Class SetupDialogForm
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(268, 393)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(300, 476)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
@@ -97,7 +98,7 @@ Partial Class SetupDialogForm
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = Global.ASCOM.EBB42.My.Resources.Resources.ASCOM
-        Me.PictureBox1.Location = New System.Drawing.Point(397, 15)
+        Me.PictureBox1.Location = New System.Drawing.Point(429, 15)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(48, 56)
@@ -205,13 +206,24 @@ Partial Class SetupDialogForm
         Me.Label6.TabIndex = 18
         Me.Label6.Text = "Heater value"
         '
+        'MotorEngaged
+        '
+        Me.MotorEngaged.AutoSize = True
+        Me.MotorEngaged.Location = New System.Drawing.Point(101, 382)
+        Me.MotorEngaged.Name = "MotorEngaged"
+        Me.MotorEngaged.Size = New System.Drawing.Size(122, 20)
+        Me.MotorEngaged.TabIndex = 19
+        Me.MotorEngaged.Text = "Motor Engaged"
+        Me.MotorEngaged.UseVisualStyleBackColor = True
+        '
         'SetupDialogForm
         '
         Me.AcceptButton = Me.OK_Button
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(479, 444)
+        Me.ClientSize = New System.Drawing.Size(511, 527)
+        Me.Controls.Add(Me.MotorEngaged)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -259,4 +271,5 @@ Partial Class SetupDialogForm
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents MotorEngaged As CheckBox
 End Class
