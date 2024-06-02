@@ -40,7 +40,7 @@ I have used a 23mm thick Nema 17 stepper motor like this 17HS4023.
 
 ![Nema 17](Guide/Images/17HS4023.png)
 
-However, any NEMA stepper motor thicker than this will work but you are limited to 1.5A per phase by the EBB42 stepper motor driver. Even thinner motors will work but you will have a hard time mounting them as the case will foul most mounting brackets. The FreeCAD file containing the parts is included in this repository so can be edited to provide a spacer to pad out the difference in width if needed. 
+However, any NEMA stepper motor thicker than this will work but you are limited to 1.5A per phase by the EBB36 stepper motor driver. Even thinner motors will work but you will have a hard time mounting them as the case will foul most mounting brackets. The FreeCAD file containing the parts is included in this repository so can be edited to provide a spacer to pad out the difference in width if needed. 
 
 ### BigTreeTech EBB36 
 
@@ -48,13 +48,22 @@ There are two versions of this, one with an accelerometer and one without, both 
 
 ![EBB36 Focuser PCB](Guide/Images/EBB36PCB.png)
 
+### Note about the EBB42
+
+Originallt this project was built around the EBB42 kit sold by big tree tech however we changed the design to use the EBB36 for two reasons; 
+
+1) The PCB is smaller allowing for a smaller sized case and
+2) The power connector while smaller is of a more common type so should be easier to source replacements for.
+
+All of the software provided here will work just fine with the EBB42 but you will need to design your own case for it.
+
 ### M3 Hex bolts
 
 To secure the EBB36 you will need 4 25mm long M3 bolts and 2 5mm M3 bolts while the ones for the stepper motor depend on how thick the one you buy is. The original bolts will not reach through the combined thickness of the case and motor so you will need 2 replacement ones. I found that for the 23mm thick motor I could use 22mm long bolts.  
 
 ### Optional: Crimping tools and ferrules
 
-The EBB36 focuser comes with all the accessories you need to connect it up it comes with the cable fittings needed to be added to wires to fit in its sockets and the metal pins too. However you will need to crimp these onto the wires yourself and a dupont compatable crimping tool greatly helps.
+The EBB36 focuser comes with all the accessories you need to connect it up, it comes with all the cable fittings needed. However you will need to crimp these onto the wires yourself and a dupont or similar crimping tool greatly helps.
 
 ![Dupont crimping](Guide/Images/DuPontCrimping.png)
 
@@ -62,9 +71,11 @@ However it is possible to crimp using Needle Nose Pliers.
 
 [![Needle Nose Pliers](http://img.youtube.com/vi/JsoqBS1-k7M/0.jpg)](http://www.youtube.com/watch?v=JsoqBS1-k7M "Needle Nose Pliers")
 
-I also made use of ferrules for terminating the dew heater wires used in the screw terminals.
+It can also be a good idea to use ferrules for terminating the dew heater wires used in the screw terminals.
 
 ![Dupont crimping](Guide/Images/FerruleCrimping.png)
+
+One kit will get you enough connectors to last a lifetime. 
 
 ## What you need to 3D print.
 
@@ -78,15 +89,21 @@ The bottom section of the case needs supports to print well, I used the support 
 
 ### Notes on filament type.
 
-Stepper motors will get warm when opperating and even when not moving they are being held in place by powered magnetic fields. They are designed to cope with very very high temperatures. The firmware provided does make use of the TMC2209's CoolStep technology which greatly lowers the current drawn when not moving however the motor will still get warm to the touch, around 40c to 50c are common. This means you really should think twice about using a filament such as PLA which will start going floppy around this temperature. PETG would be better but ABS or ASA would be best. 
+Stepper motors will get warm when operating and even when not moving they are being held in place by powered magnetic fields. They are designed to cope with very very high temperatures. The firmware provided does make use of the TMC2209's CoolStep technology which greatly lowers the current drawn when not moving however the motor will still get warm to the touch, around 40c to 50c is common. This means you really should think twice about using a filament such as PLA which will start going floppy around this temperature. PETG would be better but ABS or ASA would be best. 
 
 ## Assembling the case.
 
 ![Exploded](Guide/Images/EBB36Exploded.png)
 
+In this section we will cover the step by step assembly of the motor and case
+
 ### Shorten the stepper motor wires
 
-Todo: Warning about checking the wiring order.
+The stepper motor you purchased probably came with a four wire cable with red, blue, green and black cables. However this cable will be far too long. It needs to be shortened to 70mm and this will require either cutting a resoldering the wires or recrimpling the connectors and using the supplied housing in the EBB36 PCB kit.
+
+#### Wiring order.
+
+Stepper motors like these use fluctuating magnetic fields to move the motor and this particular motor driver is designed to work with four wire two phase motors. There appears to be no standard colours for wiring so you should test the wires to see which go together.
 
 Todo: Reminder about crimping
 
