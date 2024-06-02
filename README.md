@@ -2,11 +2,7 @@ Todo: Better blurb at start
 
 Todo: need to add #define FLASH_BANK_NUMBER	FLASH_BANK_1 to file C:\Users\willi\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0\variants\STM32G0xx\G0B1C(B-C-E)(T-U)_G0C1C(C-E)(T-U)\variant_EBB42_V1_1.h
 
-Todo: Arduino Library section lol spelling mistake need to add downloading the github repository
-
 Todo: Visual studio won't let you compile unless you right click two .resx and click "unblock".
-
-Todo: Using STMCube
 
 Todo: Installing ASCOM driver
 
@@ -261,7 +257,9 @@ This should open a window showing a file structure similar to the image below.
 
 ### Compiling and uploading source files using Ardunio IDE.
 
-Go to the folder %UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\Arduino\EBB42TelescopeFocuser and double click EBB42TelescopeFocuser.ino
+Go to the folder 
+
+> "%UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\Arduino\EBB42TelescopeFocuser and double click EBB42TelescopeFocuser.ino"
 
 ![EBB42TelescopeFocuser.ino](Guide/Images/OpenArduinoCodeFile.png) 
 
