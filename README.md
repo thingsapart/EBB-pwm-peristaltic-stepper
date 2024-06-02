@@ -1,5 +1,7 @@
 Todo: Better blurb at start
+
 Todo: How to use ASCOM driver (Using N.I.N.A).
+
 Todo: Double check hex bolt sizes.
 
 
