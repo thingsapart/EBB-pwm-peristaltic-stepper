@@ -279,7 +279,7 @@ Once clicked the arduino code will be first compiled and then uploaded to the fo
 
 When the code is successfully uploaded you will get an output at the bottom of the arduino window something like below.
 
-![success](uploadSuccessful.png)
+![success](Guide/Images/uploadSuccessful.png)
 
 ## Compiling ASCOM driver from source code.
 
