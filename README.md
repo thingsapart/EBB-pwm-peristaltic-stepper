@@ -18,6 +18,8 @@ Todo: Installing ASCOM driver
 
 Todo: How to use with ASCOM.
 
+Todo: Double check hex bolt sizes.
+
 
 # Realta Scope Tech EBBfocuser
 
