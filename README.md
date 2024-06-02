@@ -171,7 +171,7 @@ and add https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started to
 
 ### Edit the configuration
 
-As at the time of writing this guide (June 2024) the board definition for the EBB36/42 do not allow you to use the micro controllers flash memory, not sure why this is as all thats needed is a simple configuration change. 
+As at the time of writing this guide (June 2024) the board definitions for the EBB36/42 do not allow you to use the micro controllers flash memory, not sure why this is as all thats needed is a simple configuration change. 
 
 You need to use file explorer to go open a file in the following impossibly long directory
 
@@ -185,15 +185,13 @@ The file that needs editing is variant_EBB42_V1_1.h, its likely your PC doesn't 
 
 Once opened we need to add one line of text, #define FLASH_BANK_NUMBER	FLASH_BANK_1, as shown below.
 
-![Board manager](Guide/Images/NotePadSelect.png)
-
 ![Board manager](Guide/Images/EEPROM_WORK.png)
 
 Please note that forgetting this step will lead to some confusion later on as the arduino code will compile and upload just fine but will not work correctly in practice as it will never remember its position.
 
 ### User board manager to add stm32duino
 
-Use the "tools" -> Board manager menu at the top to add the STM32 boards to the IDE.
+Back in arduino IDE use the "tools" -> Board manager menu at the top to add the STM32 boards to the IDE.
 
 ![Board manager](Guide/Images/BoardsManager.png)
 
@@ -209,7 +207,7 @@ tools -> STM32 MCU based boards -> 3D printer boards
 
 ![Choose 3D Printers](Guide/Images/3DPrinterBoards.png)
 
-Then use the newly added menus to select the board part number 
+Then use the newly added menus to select the board part number, the Big Tree Tech EBB42 uses all the same hardware and connections just on a slightly larger PCB. 
 
 ![Choose EBB42](Guide/Images/BoardPartNumber.png)
 
@@ -227,7 +225,7 @@ https://www.st.com/en/development-tools/stm32cubeprog.html
 
 ### Adding in required libraries.
 
-In order to comunicate with the TMC2209 stepper driver on the EBB32 PCB we need computer code, I didn't write it myself I used a library that was written by teemuatlut, here's a link to his projects github https://github.com/teemuatlut/TMCStepper however you won't need to download anything from there as we can do that via the Arduino IDE itself. 
+In order to comunicate with the TMC2209 stepper driver on the EBB36 PCB we need computer code, we didn't write this fully ourselves we got some help and used a library that was written by teemuatlut, here's a link to his projects github https://github.com/teemuatlut/TMCStepper however you won't need to download anything from there as we can do that via the Arduino IDE itself. 
 
 To do this we use the manage libraries function from the Sketch menu option
 
@@ -240,6 +238,8 @@ Type TMCStepper into the search box and then install the latest version.
 The console in the bottom right will show success when installation is successful. 
 
 ![Console shows success](Guide/Images/ConsoleSuccess.png)
+
+Now arduino IDE is fully ready to be used to program the EBB36!
 
 ### Download and Unzip Realta EBB42 telescope focuser repository
 
@@ -257,17 +257,31 @@ This will show a dialog box asking you where to unzip the file, leave the defaul
 
 This should open a window showing a file structure similar to the image below.
 
+![here are the folders](Guide/Images/UnzippedFolder.png)
+
 ### Compiling and uploading source files using Ardunio IDE.
 
-Show tick and arrow 
+Go to the folder %UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\Arduino\EBB42TelescopeFocuser and double click EBB42TelescopeFocuser.ino
 
-describe difference
+![EBB42TelescopeFocuser.ino](Guide/Images/OpenArduinoCodeFile.png) 
 
-Show how to set EBB42 into programming mode.
+We are now ready to upload the arduino code to the EBB36 however we must first put the EBB36 into upload mode. Connect the EBB36 to your computer using a suitable cable and connect it to a 12v power source. You should here your computer beep when its connected. 
 
-### Alternatively uploading pre-compiled binaries using STMCubeProgrammer software.
+Once this id done the EBB36 can be put into upload mode by pressing two buttons on the PCB, you can do this either by removing the case or using two tooth picks and a little trial and error.
 
-Can just open bin file and upload it using STMCubeProgrammer, still need to set EBB42 into programming mode.
+![click hold click](Guide/Images/PutPCBintoUploadModee.png) 
+
+You need to press and hold the button closest to the port panel and then click the other button once and release both. You should here a beep again as the device disconnects again.
+
+Now that is done back in Arduino IDE we need to click the "upload" arrow button in the top left.
+
+![upload arrow](Guide/Images/uploadbutton.png)
+
+Once clicked the arduino code will be first compiled and then uploaded to the focuser. The first time you do this it can take a while as the STM32CubeProgrammer from earlier is silently opened in the background. 
+
+When the code is successfully uploaded you will get an output at the bottom of the arduino window something like below.
+
+![success](uploadSuccessful.png)
 
 ## Compiling ASCOM driver from source code.
 
