@@ -93,7 +93,7 @@ In this section we will cover the step by step assembly of the motor and case
 
 ### Shorten the stepper motor wires
 
-The stepper motor you purchased probably came with a four wire cable with red, blue, green and black cables. However this cable will be far too long. It needs to be shortened to 70mm and this will require either cutting a resoldering the wires or recrimpling the connectors and using the supplied housing in the EBB36 PCB kit.
+The stepper motor you purchased probably came with a four wire cable with red, blue, green and black cables. However this cable will be far too long. It needs to be shortened to 70mm and this will require either cutting and resoldering the wires or recrimpling the connectors, most motors that are available on the webb will either have fixed wiring at the motor end or use a wider 6 pin connector, in the case of two connector motors measure from the larger connector as the EBB36 PCB kit will come with spare connectors and housings.
 
 Stepper motors like these are designed to work with four wire two phase motors. The phases for the motor will be named A and B and a pair of wires will be used with each phase, the documentation for your stepper motor will sometimes tell you which colour wires go with each phase but there appears to be no standard colours for wiring so you should test the wires to see which go together if possible. To do this you can use a multimeter as matching pairs will show continuity.
 
@@ -105,13 +105,29 @@ If you can't test the wires its not the end of the world if they get mixed up th
 
 The image above shows how the EBB36 PCB expects you to connect the phases, it doesn't matter that you connect AA from your motors documentation to AA on the header just that you keep both wires of each phase seperate from the others, swapping the order just reverses the direction of movement. The cables that came with my stepper motors had the pin order ABAB so I had to flip the two middle wires over.
 
+### Remove two screws from the stepper motor
+
+The case is mounted to the stepper motor using its own case mounting screws just using the longer replacement ones discussed earlier. The two screws that need removing are shown below. 
+
+![Insert Nema 17](Guide/Images/RemoveStepperScrews.png)
+
 ### Insert NEMA 17 stepper motor
+
+The stepper motor will fit into the bottom half of the case when inserted at an angle.
 
 ![Insert Nema 17](Guide/Images/InsertNema.png)
 
+Make sure its wires are connected and to feed them through to the other side of the case.
+
+Mount the case using the repacement bolts as shown below
+
 ![Screw Nema 17](Guide/Images/screwNema.png)
 
+Do not over tighten these (or any other bolts) just a moderate hand tighting will do.
+
 ### Postion Face Plate
+
+The case face plate needs to be positioned over the USB-C port and power connector before fitting to the case.
 
 ![Postion Face Plate](Guide/Images/FacePlate.png)
 
@@ -121,9 +137,15 @@ The image above shows how the EBB36 PCB expects you to connect the phases, it do
 
 ![Fit PCB](Guide/Images/ScrewPCB.png)
 
-### Todo: Insert motor wire connector
+### Insert motor wire connector
+
+The wire connector from the motor can now be connected to the PCB as shown below.
+
+Todo: Picture goes here!
 
 ### Fit top of case
+
+Use two 10 mm hex bolts to screw the PCB into position. Do not over tighten.
 
 ![Fit PCB](Guide/Images/ScewTopCase.png)
 
@@ -139,11 +161,35 @@ When you start the IDE for the first time you will be asked to allow it access t
 
 ### Add additional Boards Managers URLs
 
+The EBB36 doesn't use a microcontroller of a type used by any of the boards supplier by Arduino so we need to download additional board definitions. This can be done using the Arduino IDE itself. 
+
 Go to file -> preferences and add stm32duino
 
 ![Board manager](Guide/Images/ArduinoPreferences.png)
 
 and add https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started to the "additional Boards Managers" section at the bottom. Wait for the definitions to download
+
+### Edit the configuration
+
+As at the time of writing this guide (June 2024) the board definition for the EBB36/42 do not allow you to use the micro controllers flash memory, not sure why this is as all thats needed is a simple configuration change. 
+
+You need to use file explorer to go open a file in the following impossibly long directory
+
+%LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0\variants\STM32G0xx\G0B1C(B-C-E)(T-U)_G0C1C(C-E)(T-U)
+
+The file that needs editing is variant_EBB42_V1_1.h, its likely your PC doesn't have an application associated with this file type but its really just a text file so can be opened just fine in notepad.
+
+![Board manager](Guide/Images/ChooseAnotherApp.png)
+
+![Board manager](Guide/Images/NotePadSelect.png)
+
+Once opened we need to add one line of text, #define FLASH_BANK_NUMBER	FLASH_BANK_1, as shown below.
+
+![Board manager](Guide/Images/NotePadSelect.png)
+
+![Board manager](Guide/Images/EEPROM_WORK.png)
+
+Please note that forgetting this step will lead to some confusion later on as the arduino code will compile and upload just fine but will not work correctly in practice as it will never remember its position.
 
 ### User board manager to add stm32duino
 
