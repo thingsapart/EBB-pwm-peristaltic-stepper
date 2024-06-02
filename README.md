@@ -1,13 +1,5 @@
 Todo: Better blurb at start
-
-Todo: need to add #define FLASH_BANK_NUMBER	FLASH_BANK_1 to file C:\Users\willi\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0\variants\STM32G0xx\G0B1C(B-C-E)(T-U)_G0C1C(C-E)(T-U)\variant_EBB42_V1_1.h
-
-Todo: Visual studio won't let you compile unless you right click two .resx and click "unblock".
-
-Todo: Installing ASCOM driver
-
-Todo: How to use with ASCOM.
-
+Todo: How to use ASCOM driver (Using N.I.N.A).
 Todo: Double check hex bolt sizes.
 
 
@@ -281,38 +273,15 @@ When the code is successfully uploaded you will get an output at the bottom of t
 
 ![success](Guide/Images/uploadSuccessful.png)
 
-## Compiling ASCOM driver from source code.
+You will hear another beep as the device reconnects to the PC. 
 
-### Download Visual Studio Community
+### ASCOM driver installer.
 
-Visual studio comunity is a free version of visual studio
+The windows ASCOM driver can be found in folder
 
-https://visualstudio.microsoft.com/downloads/
+"%UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\ASCOM driver"
 
-Clicking the "Free download" button will take you to another site that will automatically start downloading the application. As its a ".exe" file your web browser might ask for your permission.
-
-When VS studio Community starts to install it will ask you questions about what you want to use it for, answer x, y, x
-
-### Run as administator
-
-Explain its a DLL and need to be admin to register it in windows
-
-### Open project
-
-In the earlier step you downloaded the Realta EBB42 telescope focuser repository, the VS project is located in that repository in folder XYZ, open the file named todo_file_name.
-
-### Configure for "Any CPU"
-
-Who how to change to "Any CPU" compiler. Todo need to check this actually works for a fresh install otherwise ask to compile for x64 unless they know they are running an older CPU. 
-
-### Rebuild project
-
-Show screen shots of rebuilding.
-
-### Alternatively using pre-compiled ASCOM driver installer.
+double clicking "EBB42 Focuser Setup.exe" will install the driver.
 
 ## How to use ASCOM driver (Using N.I.N.A).
 
-## Notes about INDI linux driver.
-
-Lol I don't know how!
