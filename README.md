@@ -1,10 +1,4 @@
-Todo: Redo as no need for threaded inserts.
-
-Todo: One of the printed parts does need supports.
-
 Todo: Better blurb at start
-
-Todo: Shorten the stepper motor wires whole section
 
 Todo: need to add #define FLASH_BANK_NUMBER	FLASH_BANK_1 to file C:\Users\willi\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0\variants\STM32G0xx\G0B1C(B-C-E)(T-U)_G0C1C(C-E)(T-U)\variant_EBB42_V1_1.h
 
@@ -101,13 +95,15 @@ In this section we will cover the step by step assembly of the motor and case
 
 The stepper motor you purchased probably came with a four wire cable with red, blue, green and black cables. However this cable will be far too long. It needs to be shortened to 70mm and this will require either cutting a resoldering the wires or recrimpling the connectors and using the supplied housing in the EBB36 PCB kit.
 
-#### Wiring order.
+Stepper motors like these are designed to work with four wire two phase motors. The phases for the motor will be named A and B and a pair of wires will be used with each phase, the documentation for your stepper motor will sometimes tell you which colour wires go with each phase but there appears to be no standard colours for wiring so you should test the wires to see which go together if possible. To do this you can use a multimeter as matching pairs will show continuity.
 
-Stepper motors like these use fluctuating magnetic fields to move the motor and this particular motor driver is designed to work with four wire two phase motors. There appears to be no standard colours for wiring so you should test the wires to see which go together.
+https://www.youtube.com/watch?v=UI86W26lgl0
 
-Todo: Reminder about crimping
+If you can't test the wires its not the end of the world if they get mixed up the motor will just jitter around and move ineffectively and you just need to swapped two of the wires around in the connector housing.
 
-Todo: Suggested length.
+![Printer](Guide/Images/MotorPinPhases.png)
+
+The image above shows how the EBB36 PCB expects you to connect the phases, it doesn't matter that you connect AA from your motors documentation to AA on the header just that you keep both wires of each phase seperate from the others, swapping the order just reverses the direction of movement. The cables that came with my stepper motors had the pin order ABAB so I had to flip the two middle wires over.
 
 ### Insert NEMA 17 stepper motor
 
