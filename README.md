@@ -10,6 +10,8 @@ Todo: need to add #define FLASH_BANK_NUMBER	FLASH_BANK_1 to file C:\Users\willi\
 
 Todo: Arduino Library section lol spelling mistake need to add downloading the github repository
 
+Todo: Visual studio won't let you compile unless you right click two .resx and click "unblock".
+
 Todo: Using STMCube
 
 Todo: Installing ASCOM driver
