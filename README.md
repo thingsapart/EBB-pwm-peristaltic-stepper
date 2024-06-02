@@ -171,7 +171,7 @@ As at the time of writing this guide (June 2024) the board definitions for the E
 
 You need to use file explorer to go open a file in the following impossibly long directory
 
-%LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0\variants\STM32G0xx\G0B1C(B-C-E)(T-U)_G0C1C(C-E)(T-U)
+"%LocalAppData%\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0\variants\STM32G0xx\G0B1C(B-C-E)(T-U)_G0C1C(C-E)(T-U)"
 
 The file that needs editing is variant_EBB42_V1_1.h, its likely your PC doesn't have an application associated with this file type but its really just a text file so can be opened just fine in notepad.
 
@@ -259,7 +259,7 @@ This should open a window showing a file structure similar to the image below.
 
 Go to the folder 
 
-> "%UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\Arduino\EBB42TelescopeFocuser and double click EBB42TelescopeFocuser.ino"
+"%UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\Arduino\EBB42TelescopeFocuser and double click EBB42TelescopeFocuser.ino"
 
 ![EBB42TelescopeFocuser.ino](Guide/Images/OpenArduinoCodeFile.png) 
 
