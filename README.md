@@ -253,7 +253,9 @@ This should open a window showing a file structure similar to the image below.
 
 Go to the folder 
 
-"%UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\Arduino\EBB42TelescopeFocuser and double click EBB42TelescopeFocuser.ino"
+"%UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\Arduino\EBBTelescopeFocuser" 
+
+and double click "EBBTelescopeFocuser.ino"
 
 ![EBB42TelescopeFocuser.ino](Guide/Images/OpenArduinoCodeFile.png) 
 
@@ -283,7 +285,7 @@ The windows ASCOM driver can be found in folder
 
 "%UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\ASCOM driver"
 
-double clicking "EBB42 Focuser Setup.exe" will install the driver.
+double clicking "Realta EBB focuser Setup.exe" will install the driver.
 
 ## How to use ASCOM driver (Using N.I.N.A).
 
