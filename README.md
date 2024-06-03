@@ -2,6 +2,10 @@ Todo: Better blurb at start
 
 Todo: How to use ASCOM driver (Using N.I.N.A).
 
+Todo: UnzippedFolder.png OpenArduinoCodeFile.png uploadbutton.png all need changing as folders and file names have changed.
+
+Todo: Pictures for installing driver.
+
 Todo: Double check hex bolt sizes.
 
 
@@ -231,7 +235,7 @@ The console in the bottom right will show success when installation is successfu
 
 Now arduino IDE is fully ready to be used to program the EBB36!
 
-### Download and Unzip Realta EBB42 telescope focuser repository
+### Download and Unzip the Realta-EBBfocuser repository
 
 Now we need to download the code and other files in this repository, on the main page there is a green "<> Code" button.
 
