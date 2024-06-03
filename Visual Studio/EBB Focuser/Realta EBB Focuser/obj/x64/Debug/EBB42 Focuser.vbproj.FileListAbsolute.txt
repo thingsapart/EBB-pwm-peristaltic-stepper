@@ -1,0 +1,11 @@
+C:\Users\georg\source\repos\EBB42 Focuser\EBB42 Focuser\bin\x64\Debug\ASCOM.EBB42.Focuser.dll.config
+C:\Users\georg\source\repos\EBB42 Focuser\EBB42 Focuser\bin\x64\Debug\ASCOM.EBB42.Focuser.dll
+C:\Users\georg\source\repos\EBB42 Focuser\EBB42 Focuser\bin\x64\Debug\ASCOM.EBB42.Focuser.pdb
+C:\Users\georg\source\repos\EBB42 Focuser\EBB42 Focuser\obj\x64\Debug\EBB42 Focuser.vbproj.AssemblyReference.cache
+C:\Users\georg\source\repos\EBB42 Focuser\EBB42 Focuser\obj\x64\Debug\ASCOM.EBB42.Resources.resources
+C:\Users\georg\source\repos\EBB42 Focuser\EBB42 Focuser\obj\x64\Debug\ASCOM.EBB42.SetupDialogForm.resources
+C:\Users\georg\source\repos\EBB42 Focuser\EBB42 Focuser\obj\x64\Debug\EBB42 Focuser.vbproj.GenerateResource.cache
+C:\Users\georg\source\repos\EBB42 Focuser\EBB42 Focuser\obj\x64\Debug\EBB42 Focuser.vbproj.CoreCompileInputs.cache
+C:\Users\georg\source\repos\EBB42 Focuser\EBB42 Focuser\obj\x64\Debug\ASCOM.EBB42.Focuser.dll
+C:\Users\georg\source\repos\EBB42 Focuser\EBB42 Focuser\obj\x64\Debug\ASCOM.EBB42.Focuser.pdb
+C:\Users\georg\source\repos\EBB42 Focuser\EBB42 Focuser\bin\x64\Debug\ASCOM.EBB42.Focuser.tlb
