@@ -180,6 +180,10 @@ void loop() {
         EEPROM.put(1, 50000); // Current position
         EEPROM.put(10,500); // Motor Current
         EEPROM.put(20,8); // Micro Steps
+        // read these back out into motor classes variables
+        EEPROM.get(1, MyMotor.CurrentPosition);
+        EEPROM.get(10, MyMotor.current);
+        EEPROM.get(20, MyMotor.steps);
       }
    }
   
