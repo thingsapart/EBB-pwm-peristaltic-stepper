@@ -92,9 +92,9 @@ boolean Motor::Move()
             }
             
             digitalWrite(PD0, HIGH); // Raise voltage on this pin to VCC or 3.3v
-            delayMicroseconds(75); // wait
+            delayMicroseconds(120); // wait
             digitalWrite(D_STEP_PIN, LOW);
-            delayMicroseconds(75); // wait
+            delayMicroseconds(120); // wait
 
             return true;
             
