@@ -63,7 +63,7 @@ void setup() {
   MyMotor.begin();                                                                                                                                                                                                                                                                                                                            // UART: Init SW UART (if selected) with default 115200 baudrate
   MyMotor.toff(5);               // Enables driver in software
   MyMotor.rms_current(MyMotor.current);     // Set motor RMS current, needs to be user configurable, unit is mA
-  MyMotor.microsteps(8);        // Set microsteps, needs to be user configurable
+  
 
   MyMotor.en_spreadCycle(false); // sets stepper to use silent mode
   MyMotor.pwm_autoscale(true);   // Needed for stealthChop
