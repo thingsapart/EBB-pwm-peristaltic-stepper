@@ -1,15 +1,6 @@
 #include <EEPROM.h>;
 #include <TMCStepper.h>
 
-/*
- * 
- * "Halt"
- * "IsMoving" get true or false
- * "Move" pass integer of where you want it to move to
- * "Position" returns focuser current position
- * 
- */
-
 #define D_STEP_PIN PD0
 #define D_UART_PIN PA15
 #define D_ENABLE_PIN PD2
@@ -91,7 +82,7 @@ boolean Motor::Move()
               shaft(move_direction);   
             }
             
-            digitalWrite(PD0, HIGH); // Raise voltage on this pin to VCC or 3.3v
+            digitalWrite(D_STEP_PIN, HIGH); // Raise voltage on this pin to VCC or 3.3v
             delayMicroseconds(120); // wait
             digitalWrite(D_STEP_PIN, LOW);
             delayMicroseconds(120); // wait
