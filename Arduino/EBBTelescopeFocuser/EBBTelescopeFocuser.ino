@@ -8,29 +8,11 @@
 #define D_ENABLE_PIN PD2
 #define D_HEATER_PIN PB13
 
-
-/*
-
-Things we need it to do.
-
-"Halt"
-"Move" pass integer of where you want it to move to
-
-Get "IsMoving" get true or false
-Get and Set "Position" returns focuser current position
-
-Get and Set "Set Amps via MyMotor.rms_current(1200);
-Get and Set * Set microspteps MyMotor.microsteps(8);
-* 
- */
-
-
 #define D_DRIVER_ADDRESS 0b00 // PCB has both TMC2209 MS1 and MS2 pins grounded so this is the correct address for that configuration
 #define D_R_SENSE 0.11f // These are the resistance values of the current monitoring resistors as per the PCB datasheet, it has two 0R11 resistors (0.11 Ohm). This is used by the TMC2209 stepper driver to measure the current going to the stepper motor. It has one resistor for each coil of the stepper. 
  
 SoftwareSerial G_TMC_SERIAL (D_UART_PIN, D_UART_PIN);
 Motor MyMotor(&G_TMC_SERIAL, D_R_SENSE, D_DRIVER_ADDRESS);
-
 
 void setup() {
   // put your setup code here, to run once:
@@ -59,14 +41,14 @@ void setup() {
   Serial.begin(9600); // Start serial communication to PC
 
   G_TMC_SERIAL.begin(11520);  // Start serial communication with TMC
-  MyMotor.beginSerial(11520); // Tell TMC to start communication too?
+  MyMotor.beginSerial(11520); 
   MyMotor.begin();                                                                                                                                                                                                                                                                                                                            // UART: Init SW UART (if selected) with default 115200 baudrate
-  MyMotor.toff(5);               // Enables driver in software
+  MyMotor.toff(5);                          // Enables driver in software
   MyMotor.rms_current(MyMotor.current);     // Set motor RMS current, needs to be user configurable, unit is mA
-  MyMotor.microsteps(MyMotor.steps);  // Set the micro steps of the motor driver
+  MyMotor.microsteps(MyMotor.steps);        // Set the micro steps of the motor driver
 
-  MyMotor.en_spreadCycle(false); // sets stepper to use silent mode
-  MyMotor.pwm_autoscale(true);   // Needed for stealthChop
+  MyMotor.en_spreadCycle(false);            // sets stepper to use silent mode
+  MyMotor.pwm_autoscale(true);              // Needed for stealthChop
 
 }
 
