@@ -2,8 +2,6 @@ Todo: Better blurb at start
 
 Todo: How to use ASCOM driver (Using N.I.N.A).
 
-Todo: UnzippedFolder.png OpenArduinoCodeFile.png uploadbutton.png all need changing as folders and file names have changed.
-
 Todo: Pictures for installing driver.
 
 Todo: Double check hex bolt sizes.
