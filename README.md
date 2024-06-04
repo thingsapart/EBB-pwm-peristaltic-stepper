@@ -4,7 +4,7 @@ Todo: How to use ASCOM driver (Using N.I.N.A).
 
 Todo: Pictures for installing driver.
 
-Todo: Double check hex bolt sizes.
+Todo: Double check hex bolt sizes. 4 x 24mm M3 for the case top.
 
 
 # Realta Scope Tech EBBfocuser
