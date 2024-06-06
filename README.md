@@ -98,6 +98,8 @@ Stepper motors like these are designed to work with four wire two phase motors. 
 
 https://www.youtube.com/watch?v=UI86W26lgl0
 
+[![EZTip #4 - Testing and Checking your Stepper Motors](http://img.youtube.com/vi/UI86W26lgl0/0.jpg)]([http://www.youtube.com/watch?v=JsoqBS1-k7M](https://www.youtube.com/watch?v=UI86W26lgl0) "EZTip #4 - Testing and Checking your Stepper Motors")
+
 If you can't test the wires its not the end of the world if they get mixed up the motor will just jitter around and move ineffectively and you just need to swapped two of the wires around in the connector housing.
 
 ![Printer](Guide/Images/MotorPinPhases.png)
@@ -369,4 +371,4 @@ This will connect you to the focuser and the information on the screen should ch
 
 Here is a pretty good guide to setting up a focuser we found on Youtube, its for a different focuser but the idea is the same.
 
-[![Level Up Your Astroimaging: Connect ZWO EAF to NINA Like a Pro](http://img.youtube.com/vi/XUISAvoKCrM/0.jpg)](https://www.youtube.com/watch?v=XUISAvoKCrM "https://www.youtube.com/watch?v=XUISAvoKCrM")
+[![Level Up Your Astroimaging: Connect ZWO EAF to NINA Like a Pro](http://img.youtube.com/vi/XUISAvoKCrM/0.jpg)](https://www.youtube.com/watch?v=XUISAvoKCrM "Level Up Your Astroimaging: Connect ZWO EAF to NINA Like a Pro")
