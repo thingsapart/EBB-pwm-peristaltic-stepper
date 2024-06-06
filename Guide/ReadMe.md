@@ -1,16 +1,14 @@
 Todo: Better blurb at start
 
-Todo: How to use ASCOM driver (Using N.I.N.A).
+Todo: Insert motor wire connector picture
 
-Todo: Pictures for installing driver.
+Todo: Connecting the focuser to your PC images.
 
-Todo: Double check hex bolt sizes. 4 x 24mm M3 for the case top.
-
+Todo: Link to compiling in visual studio.
 
 # Realta Scope Tech EBBfocuser
 
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
-
 
 ## Project goals.
 
@@ -45,7 +43,16 @@ All of the software provided here will work just fine with the EBB42 but you wil
 
 ### M3 Hex bolts
 
-To secure the EBB36 you will need 4 25mm long M3 bolts and 2 5mm M3 bolts while the ones for the stepper motor depend on how thick the one you buy is. The original bolts will not reach through the combined thickness of the case and motor so you will need 2 replacement ones. I found that for the 23mm thick motor I could use 22mm long bolts.  
+To secure the EBB36 you will need 
+
+4 25mm long M3 bolts to secure the top of the case
+
+2 6mm M3 bolts to secure the PCB
+
+2 to secure the stepper motor and their length depends on how thick the stepper motor is, the original bolts 
+will not reach through the combined thickness of the case and motor so you will need 2 replacement ones. I found that for the 23mm thick motor I could use 22mm long M3 bolts, which is unfortunatly not that common a size but Amazon sellers did have them. 
+
+Please note I found it very easy to damage the screws these motors come with so please make sure you use an appropriately sized scew driver before attempting to remove them. 
 
 ### Optional: Crimping tools and ferrules
 
@@ -89,7 +96,7 @@ The stepper motor you purchased probably came with a four wire cable with red, b
 
 Stepper motors like these are designed to work with four wire two phase motors. The phases for the motor will be named A and B and a pair of wires will be used with each phase, the documentation for your stepper motor will sometimes tell you which colour wires go with each phase but there appears to be no standard colours for wiring so you should test the wires to see which go together if possible. To do this you can use a multimeter as matching pairs will show continuity.
 
-https://www.youtube.com/watch?v=UI86W26lgl0
+[![EZTip #4 - Testing and Checking your Stepper Motors](http://img.youtube.com/vi/UI86W26lgl0/0.jpg)]([http://www.youtube.com/watch?v=JsoqBS1-k7M](https://www.youtube.com/watch?v=UI86W26lgl0) "EZTip #4 - Testing and Checking your Stepper Motors")
 
 If you can't test the wires its not the end of the world if they get mixed up the motor will just jitter around and move ineffectively and you just need to swapped two of the wires around in the connector housing.
 
@@ -243,13 +250,18 @@ clicking it will give you the oprion to download a zip file, click that. This wi
 
 ![Extract All](Guide/Images/DownloadedZip1.png)
 
-This will show a dialog box asking you where to unzip the file, leave the defaults but do click the "Shpw extracted files when complete" and click the "Extract" button
+This will show a dialog box asking you where to unzip the file, leave the defaults but do click the "Shpw extracted files when complete" and click the "Extract" button.
 
 ![Save it where?](Guide/Images/DownloadedZip2.png)
 
 This should open a window showing a file structure similar to the image below.
 
 ![here are the folders](Guide/Images/UnzippedFolder.png)
+
+> [!WARNING]  
+> One thing that might happen here is that Windows defender might decide that one of these files is a virus.
+> The file in question is the ASCOM driver installer and dealing with this will be discussed in a later section.
+> This has been a source of frustration for us and we have submitted a false positive investigation to microsoft. It seems to come from the Inno installer software and not the driver itself which is the installer recommended by the ASCOM team.  
 
 ### Compiling and uploading source files using Ardunio IDE.
 
@@ -281,6 +293,14 @@ When the code is successfully uploaded you will get an output at the bottom of t
 
 You will hear another beep as the device reconnects to the PC. 
 
+### ASCOM
+
+For any of this to work we need to install the "Astronomy Common Object Model" or ASCOM, this is a set of API specifications that make it easy for different vendors products talk to other vendors software. You can download it from this link.
+
+https://www.ascom-standards.org/Downloads/Index.htm
+
+Install it and move on to the next step.
+
 ### ASCOM driver installer.
 
 The windows ASCOM driver can be found in folder
@@ -289,5 +309,64 @@ The windows ASCOM driver can be found in folder
 
 double clicking "Realta EBB focuser Setup.exe" will install the driver.
 
+However, there are quite a few things that can go wrong here!
+
+The first is that Windows could see the drivers installer as a virus. In order to resolve this you need to go into the "Virus & threat protection" section of Windows settings and choose "Protection history"
+
+![Windows Defender fun](Guide/Images/Frustration03.png)
+
+Then you need expand the most recent "Threat quarantined" section and in the bottom section "Actions" choose "Restore".
+
+![Windows Defender fun](Guide/Images/WindowsThinksItsAVirus.png)
+
+As stated earlier we have submitted a false detection request to Microsoft.
+
+Even once past this issue Windows will now decide that the software is suspect because its not security signed. Double clicking the file will get you a warning like the following.
+
+![Windows Defender fun](Guide/Images/Frustration01.png)
+
+Clicking the "More info" text will make a new button appear "Run anyway" appear, clicking that will finally allow you to install the driver.
+
+![Windows Defender fun](Guide/Images/Frustration02.png)
+
+Click accept agreement and then next.
+
+![Finally install the software](Guide/Images/AcceptAgreement.png)
+
+If this is all too much for you to trust, and who can blame you, you can instead compile the driver using Microsoft Visual Studio community eddition.
+
+https://visualstudio.microsoft.com/vs/community/
+
+Windows defender does not complain about that at all. Details of whats needed to do this can be found in the visual studio section of this github repository.
+
+Its unlikely we will be able to get this driver install file signed as that costs money and this is just a fun open source project.
+
 ## How to use ASCOM driver (Using N.I.N.A).
 
+Now that you have all the software installed you can start using the focuser. In order to use it you need telescope control software. In this section I am going to use N.I.N.A as the software. 
+
+https://nighttime-imaging.eu/
+
+![Windows Defender fun](Guide/Images/NINAFocuser01.png)
+
+Opening the settings menu is needed because the port the focuser is connected to needs to be selected.
+
+![Windows Defender fun](Guide/Images/NINAFocuser02.png)
+
+If you are lucky there will be only one option to choose from, but on our PC there is a built in COM port for controling RGB lights of all things!
+
+If its not clear what port to choose you can working out by using windows device manager (right click the start menu button) expanding the "Ports (COM & LPT)" section and unpluging the focusers USB cable from your PC, the comport should disappear from the list.
+
+![Windows Defender fun](Guide/Images/NINAFocuser03.png)
+
+Once selelcted click ok, this will close you out of the settings window and now you need to click the "connect" button that looks like a power icon. 
+
+![Windows Defender fun](Guide/Images/NINAFocuser03a.png)
+
+This will connect you to the focuser and the information on the screen should change to the following.
+
+![Windows Defender fun](Guide/Images/NINAFocuser04.png)
+
+Here is a pretty good guide to setting up a focuser we found on Youtube, its for a different focuser but the idea is the same.
+
+[![Level Up Your Astroimaging: Connect ZWO EAF to NINA Like a Pro](http://img.youtube.com/vi/XUISAvoKCrM/0.jpg)](https://www.youtube.com/watch?v=XUISAvoKCrM "Level Up Your Astroimaging: Connect ZWO EAF to NINA Like a Pro")
