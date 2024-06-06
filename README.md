@@ -369,4 +369,4 @@ This will connect you to the focuser and the information on the screen should ch
 
 Here is a pretty good guide to setting up a focuser we found on Youtube, its for a different focuser but the idea is the same.
 
-[![Level Up Your Astroimaging: Connect ZWO EAF to NINA Like a Pro](http://img.youtube.com/vi/XUISAvoKCrM/0.jpg)]([http://www.youtube.com/watch?v=JsoqBS1-k7M](https://www.youtube.com/watch?v=XUISAvoKCrM))
+[![Level Up Your Astroimaging: Connect ZWO EAF to NINA Like a Pro](http://img.youtube.com/vi/XUISAvoKCrM/0.jpg)](https://www.youtube.com/watch?v=XUISAvoKCrM "https://www.youtube.com/watch?v=XUISAvoKCrM")
