@@ -8,7 +8,7 @@ Todo: Link to compiling in visual studio.
 
 # Realta Scope Tech EBBfocuser
 
-![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
+![EBB36 Focuser Case](Images/EBB36FinishedRCA.png)
 
 ## Project goals.
 
