@@ -4,8 +4,6 @@ Todo: Insert motor wire connector picture
 
 Todo: Connecting the focuser to your PC images.
 
-Todo: How to use ASCOM driver (Using N.I.N.A).
-
 Todo: Link to compiling in visual studio.
 
 # Realta Scope Tech EBBfocuser
@@ -313,7 +311,7 @@ double clicking "Realta EBB focuser Setup.exe" will install the driver.
 
 However, there are quite a few things that can go wrong here!
 
-The first is that Windows could see the driver installers as a virus. In order to resolve this you need to go into the "Virus & threat protection" section of Windows settings and choose "Protection history"
+The first is that Windows could see the drivers installer as a virus. In order to resolve this you need to go into the "Virus & threat protection" section of Windows settings and choose "Protection history"
 
 ![Windows Defender fun](Guide/Images/Frustration03.png)
 
@@ -357,13 +355,20 @@ Opening the settings menu is needed because the port the focuser is connected to
 
 If you are lucky there will be only one option to choose from, but on our PC there is a built in COM port for controling RGB lights of all things!
 
-![Windows Defender fun](Guide/Images/NINAFocuser03.png)
-
 If its not clear what port to choose you can working out by using windows device manager (right click the start menu button) expanding the "Ports (COM & LPT)" section and unpluging the focusers USB cable from your PC, the comport should disappear from the list.
 
-Once selelcted click 
+![Windows Defender fun](Guide/Images/NINAFocuser03.png)
+
+Once selelcted click ok, this will close you out of the settings window and now you need to click the "connect" button that looks like a power icon. 
+
+![Windows Defender fun](Guide/Images/NINAFocuser03a.png)
+
+This will connect you to the focuser and the information on the screen should change to the following.
 
 ![Windows Defender fun](Guide/Images/NINAFocuser04.png)
 
-https://www.youtube.com/watch?v=XUISAvoKCrM
+Here is a pretty good guide to setting up a focuser we found on Youtube, its for a different focuser but the idea is the same.
+
+[![Needle Nose Pliers](http://img.youtube.com/vi/XUISAvoKCrM/0.jpg)]([http://www.youtube.com/watch?v=JsoqBS1-k7M](https://www.youtube.com/watch?v=XUISAvoKCrM))
+
 
