@@ -1,5 +1,7 @@
 Todo: Better blurb at start
 
+Todo: Insert motor wire connector picture
+
 Todo: How to use ASCOM driver (Using N.I.N.A).
 
 Todo: Pictures for installing driver.
