@@ -96,8 +96,6 @@ The stepper motor you purchased probably came with a four wire cable with red, b
 
 Stepper motors like these are designed to work with four wire two phase motors. The phases for the motor will be named A and B and a pair of wires will be used with each phase, the documentation for your stepper motor will sometimes tell you which colour wires go with each phase but there appears to be no standard colours for wiring so you should test the wires to see which go together if possible. To do this you can use a multimeter as matching pairs will show continuity.
 
-https://www.youtube.com/watch?v=UI86W26lgl0
-
 [![EZTip #4 - Testing and Checking your Stepper Motors](http://img.youtube.com/vi/UI86W26lgl0/0.jpg)]([http://www.youtube.com/watch?v=JsoqBS1-k7M](https://www.youtube.com/watch?v=UI86W26lgl0) "EZTip #4 - Testing and Checking your Stepper Motors")
 
 If you can't test the wires its not the end of the world if they get mixed up the motor will just jitter around and move ineffectively and you just need to swapped two of the wires around in the connector housing.
