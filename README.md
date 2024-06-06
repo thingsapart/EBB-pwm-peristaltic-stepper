@@ -12,7 +12,6 @@ Todo: ASCOM
 
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
 
-
 ## Project goals.
 
 + Truley open source code i.e. do what you want with it.
@@ -291,6 +290,14 @@ When the code is successfully uploaded you will get an output at the bottom of t
 
 You will hear another beep as the device reconnects to the PC. 
 
+### ASCOM
+
+For any of this to work we need to install the "Astronomy Common Object Model" or ASCOM, this is a set of API specifications that make it easy for different vendors products talk to other vendors software. You can download it from this link.
+
+https://www.ascom-standards.org/Downloads/Index.htm
+
+Install it and move on to the next step.
+
 ### ASCOM driver installer.
 
 The windows ASCOM driver can be found in folder
@@ -300,4 +307,14 @@ The windows ASCOM driver can be found in folder
 double clicking "Realta EBB focuser Setup.exe" will install the driver.
 
 ## How to use ASCOM driver (Using N.I.N.A).
+
+Now that you have all the software installed you can start using the focuser. In order to use it you need telescope control software. In this section I am going to use N.I.N.A as the software. 
+
+https://nighttime-imaging.eu/
+
+
+
+
+
+https://www.youtube.com/watch?v=XUISAvoKCrM
 
