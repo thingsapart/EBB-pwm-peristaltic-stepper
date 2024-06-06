@@ -6,9 +6,6 @@ Todo: Pictures for installing driver.
 
 Todo: ASCOM
 
-Todo: Double check hex bolt sizes. 4 x 25mm M3 for the case top.
-
-
 # Realta Scope Tech EBBfocuser
 
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
