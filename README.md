@@ -252,13 +252,18 @@ clicking it will give you the oprion to download a zip file, click that. This wi
 
 ![Extract All](Guide/Images/DownloadedZip1.png)
 
-This will show a dialog box asking you where to unzip the file, leave the defaults but do click the "Shpw extracted files when complete" and click the "Extract" button
+This will show a dialog box asking you where to unzip the file, leave the defaults but do click the "Shpw extracted files when complete" and click the "Extract" button.
 
 ![Save it where?](Guide/Images/DownloadedZip2.png)
 
 This should open a window showing a file structure similar to the image below.
 
 ![here are the folders](Guide/Images/UnzippedFolder.png)
+
+> [!WARNING]  
+> One thing that might happen here is that Windows defender might decide that one of these files is a virus.
+> The file in question is the ASCOM driver installer and dealing with this will be discussed in a later section.
+> This has been a source of frustration for us and we have submitted a false positive investigation to microsoft. It seems to come from the Inno installer software and not the driver itself.  
 
 ### Compiling and uploading source files using Ardunio IDE.
 
@@ -305,6 +310,8 @@ The windows ASCOM driver can be found in folder
 "%UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\ASCOM driver"
 
 double clicking "Realta EBB focuser Setup.exe" will install the driver.
+
+However, there are quite a few things that can go wrong here.
 
 ## How to use ASCOM driver (Using N.I.N.A).
 
