@@ -4,7 +4,9 @@ Todo: How to use ASCOM driver (Using N.I.N.A).
 
 Todo: Pictures for installing driver.
 
-Todo: Double check hex bolt sizes. 4 x 24mm M3 for the case top.
+Todo: ASCOM
+
+Todo: Double check hex bolt sizes. 4 x 25mm M3 for the case top.
 
 
 # Realta Scope Tech EBBfocuser
@@ -45,7 +47,16 @@ All of the software provided here will work just fine with the EBB42 but you wil
 
 ### M3 Hex bolts
 
-To secure the EBB36 you will need 4 25mm long M3 bolts and 2 5mm M3 bolts while the ones for the stepper motor depend on how thick the one you buy is. The original bolts will not reach through the combined thickness of the case and motor so you will need 2 replacement ones. I found that for the 23mm thick motor I could use 22mm long bolts.  
+To secure the EBB36 you will need 
+
+4 25mm long M3 bolts to secure the top of the case
+
+2 6mm M3 bolts to secure the PCB
+
+2 to secure the stepper motor and their length depends on how thick the stepper motor is, the original bolts 
+will not reach through the combined thickness of the case and motor so you will need 2 replacement ones. I found that for the 23mm thick motor I could use 22mm long M3 bolts, which is unfortunatly not that common a size but Amazon sellers did have them. 
+
+Please note I found it very easy to damage the screws these motors come with so please make sure you use an appropriately sized scew driver before attempting to remove them. 
 
 ### Optional: Crimping tools and ferrules
 
