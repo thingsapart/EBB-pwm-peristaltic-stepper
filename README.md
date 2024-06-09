@@ -1,7 +1,5 @@
 Todo: Better blurb at start
 
-Todo: Link to compiling in visual studio.
-
 Todo: Makesure SLT files are oriented correctly.
 
 Todo: Blurb for each code section.
@@ -354,6 +352,8 @@ If this is all too much for you to trust, and who can blame you, you can instead
 https://visualstudio.microsoft.com/vs/community/
 
 Windows defender does not complain about that at all. Details of whats needed to do this can be found in the visual studio section of this github repository.
+
+[Guide to compiling the Visual Studio project](Visual Studio/README.md)
 
 Its unlikely we will be able to get this driver install file signed as that costs money and this is just a fun open source project.
 
