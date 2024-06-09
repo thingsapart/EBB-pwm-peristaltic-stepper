@@ -1,5 +1,3 @@
-Todo: Better blurb at start
-
 Todo: Blurb for each code section.
 
 # Realta Scope Tech EBBfocuser
