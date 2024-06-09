@@ -26,6 +26,39 @@ Compiling this project in debug mode will create and register a COM object for w
 
 ![Run as Admin](RunAsAdmin.png)
 
+This should bring up a "Get started" window and we want to choose "Open a project or solution"
+
+![Open Project or solution](OpenAProjectOrSolution.png)
+
+Navigate to "%UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\Visual Studio\EBB Focuser"
+
+![Open Project or solution 2](OpenProjectSolution.png)
+
+And open file "Realta EBB Focuser.sln"
+
+At the top of the window there are two drop down menus, these need to be set to "Debug" and "x64" if running 64bit windows or "x86" for 32bit windows. 
+
+![Debug](DebugX64.png)
+
+Choosing release will compile the project just not register the COM object so you won't be able to use it.
+
+Now from the "Build" menu chose "Rebuild solution".
+
+![Rebuild solution](BuildRebuild.png)
+
+You should see a success message something like below.
+
+![Success](RebuildAllSuccessful.png)
+
+
+
+
+
+
+
+
+
+
 
 
 
