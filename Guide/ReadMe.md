@@ -367,6 +367,7 @@ Once selelcted click ok, this will close you out of the settings window and now 
 
 This will connect you to the focuser and the information on the screen should change to the following.
 
+
 ![Windows Defender fun](../Guide/Images/NINAFocuser04.png)
 
 Here is a pretty good guide to setting up a focuser we found on Youtube, its for a different focuser but the idea is the same.
