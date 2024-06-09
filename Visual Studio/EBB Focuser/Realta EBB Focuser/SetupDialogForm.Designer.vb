@@ -25,7 +25,6 @@ Partial Class SetupDialogForm
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.OK_Button = New System.Windows.Forms.Button()
         Me.Cancel_Button = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.label2 = New System.Windows.Forms.Label()
         Me.chkTrace = New System.Windows.Forms.CheckBox()
@@ -54,7 +53,7 @@ Partial Class SetupDialogForm
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(300, 476)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(300, 359)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
@@ -83,16 +82,6 @@ Partial Class SetupDialogForm
         Me.Cancel_Button.TabIndex = 1
         Me.Cancel_Button.Text = "Cancel"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(16, 68)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(245, 16)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Construct your driver's setup dialog here"
-        '
         'PictureBox1
         '
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -109,7 +98,7 @@ Partial Class SetupDialogForm
         'label2
         '
         Me.label2.AutoSize = True
-        Me.label2.Location = New System.Drawing.Point(16, 122)
+        Me.label2.Location = New System.Drawing.Point(17, 51)
         Me.label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.label2.Name = "label2"
         Me.label2.Size = New System.Drawing.Size(73, 16)
@@ -119,7 +108,7 @@ Partial Class SetupDialogForm
         'chkTrace
         '
         Me.chkTrace.AutoSize = True
-        Me.chkTrace.Location = New System.Drawing.Point(101, 151)
+        Me.chkTrace.Location = New System.Drawing.Point(102, 80)
         Me.chkTrace.Margin = New System.Windows.Forms.Padding(4)
         Me.chkTrace.Name = "chkTrace"
         Me.chkTrace.Size = New System.Drawing.Size(83, 20)
@@ -130,7 +119,7 @@ Partial Class SetupDialogForm
         'ComboBoxComPort
         '
         Me.ComboBoxComPort.FormattingEnabled = True
-        Me.ComboBoxComPort.Location = New System.Drawing.Point(101, 118)
+        Me.ComboBoxComPort.Location = New System.Drawing.Point(102, 47)
         Me.ComboBoxComPort.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBoxComPort.Name = "ComboBoxComPort"
         Me.ComboBoxComPort.Size = New System.Drawing.Size(111, 24)
@@ -138,7 +127,7 @@ Partial Class SetupDialogForm
         '
         'CurrentBox
         '
-        Me.CurrentBox.Location = New System.Drawing.Point(101, 178)
+        Me.CurrentBox.Location = New System.Drawing.Point(102, 107)
         Me.CurrentBox.Maximum = New Decimal(New Integer() {1200, 0, 0, 0})
         Me.CurrentBox.Name = "CurrentBox"
         Me.CurrentBox.Size = New System.Drawing.Size(120, 22)
@@ -146,7 +135,7 @@ Partial Class SetupDialogForm
         '
         'MotorPos
         '
-        Me.MotorPos.Location = New System.Drawing.Point(101, 219)
+        Me.MotorPos.Location = New System.Drawing.Point(102, 148)
         Me.MotorPos.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.MotorPos.Name = "MotorPos"
         Me.MotorPos.Size = New System.Drawing.Size(120, 22)
@@ -156,14 +145,14 @@ Partial Class SetupDialogForm
         '
         Me.NoSteps.FormattingEnabled = True
         Me.NoSteps.Items.AddRange(New Object() {"8", "16", "32", "64", "128", "256"})
-        Me.NoSteps.Location = New System.Drawing.Point(101, 263)
+        Me.NoSteps.Location = New System.Drawing.Point(102, 192)
         Me.NoSteps.Name = "NoSteps"
         Me.NoSteps.Size = New System.Drawing.Size(121, 24)
         Me.NoSteps.TabIndex = 13
         '
         'HeaterVal
         '
-        Me.HeaterVal.Location = New System.Drawing.Point(101, 308)
+        Me.HeaterVal.Location = New System.Drawing.Point(102, 237)
         Me.HeaterVal.Maximum = 255
         Me.HeaterVal.Name = "HeaterVal"
         Me.HeaterVal.Size = New System.Drawing.Size(344, 56)
@@ -173,7 +162,7 @@ Partial Class SetupDialogForm
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(237, 184)
+        Me.Label3.Location = New System.Drawing.Point(238, 113)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(49, 16)
         Me.Label3.TabIndex = 15
@@ -182,7 +171,7 @@ Partial Class SetupDialogForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(238, 225)
+        Me.Label4.Location = New System.Drawing.Point(239, 154)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(92, 16)
         Me.Label4.TabIndex = 16
@@ -191,16 +180,16 @@ Partial Class SetupDialogForm
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(243, 272)
+        Me.Label5.Location = New System.Drawing.Point(244, 201)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(84, 16)
+        Me.Label5.Size = New System.Drawing.Size(76, 16)
         Me.Label5.TabIndex = 17
-        Me.Label5.Text = "Steps Taken"
+        Me.Label5.Text = "Micro steps"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(111, 348)
+        Me.Label6.Location = New System.Drawing.Point(112, 277)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(84, 16)
         Me.Label6.TabIndex = 18
@@ -209,7 +198,7 @@ Partial Class SetupDialogForm
         'MotorEngaged
         '
         Me.MotorEngaged.AutoSize = True
-        Me.MotorEngaged.Location = New System.Drawing.Point(101, 382)
+        Me.MotorEngaged.Location = New System.Drawing.Point(102, 311)
         Me.MotorEngaged.Name = "MotorEngaged"
         Me.MotorEngaged.Size = New System.Drawing.Size(122, 20)
         Me.MotorEngaged.TabIndex = 19
@@ -222,7 +211,7 @@ Partial Class SetupDialogForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(511, 527)
+        Me.ClientSize = New System.Drawing.Size(511, 410)
         Me.Controls.Add(Me.MotorEngaged)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -236,7 +225,6 @@ Partial Class SetupDialogForm
         Me.Controls.Add(Me.chkTrace)
         Me.Controls.Add(Me.label2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Margin = New System.Windows.Forms.Padding(4)
@@ -258,7 +246,6 @@ Partial Class SetupDialogForm
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents OK_Button As System.Windows.Forms.Button
     Friend WithEvents Cancel_Button As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Private WithEvents label2 As System.Windows.Forms.Label
     Friend WithEvents chkTrace As System.Windows.Forms.CheckBox
