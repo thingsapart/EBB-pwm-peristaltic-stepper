@@ -1,5 +1,7 @@
 Todo: Blurb for each code section.
 
+Todo: Settings windo contains generic text and has microsteps section wrong.
+
 # Realta Scope Tech EBBfocuser
 
 Welcome to the Realta-EBBfocuser project! 🌟 If you’re a fellow stargazer, a curious tinkerer, or simply someone who appreciates the night sky, you’re in good company. 🚀
