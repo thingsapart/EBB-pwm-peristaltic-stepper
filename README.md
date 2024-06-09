@@ -4,13 +4,37 @@ Todo: Blurb for each code section.
 
 # Realta Scope Tech EBBfocuser
 
+Welcome to the Realta-EBBfocuser project! 🌟 If you’re a fellow stargazer, a curious tinkerer, or simply someone who appreciates the night sky, you’re in good company. 🚀
+
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
 
-## Project goals.
+## What Is Realta-EBBfocuser?
 
-+ truly open source code i.e. do what you want with it.
-+ Using open hardware only i.e. schematic available.
-+ Firmware created using Arduino IDE with full guide to get it working with the EBB.
+Realta-EBBfocuser is a humble endeavor I put together to showcase my contributions beyond the classroom. Here’s the essence of it:
+
+### The Celestial Quest:
+
+* Picture a telescope that adjusts its focus automatically—no manual tweaks required. That’s the heart of Realta-EBBfocuser.
+
+* Our tool of choice? The BIGTREETECH EBB36 3D printer board (version 1.1). Practical stargazing just got a tad more fascinating.
+
+### For Makers, By Makers:
+
+* This isn’t rocket science (though it flirts with the cosmos). It’s about having fun while tinkering with hardware.
+
+* If you’re part of the astronomy-loving maker community, grab your NEMA 17 stepper motor, dust off that EBB36 board, and let’s embark on this journey together!
+
+### What’s Under the Hood:
+
+* Open-source code? Absolutely. Schematics? Included.
+
+* Our firmware dances to the Arduino IDE’s tune. And yes, I’ve documented it all for fellow stargazers.
+
+### Join the Stellar Crew
+
+Whether you’re an amateur astronomer, a seasoned observer, or someone who finds wonder in the night, Realta-EBBfocuser invites you to join our cosmic crew. 🌌✨
+
+Explore the project on GitHub and let’s explore the universe, one focus adjustment at a time! 🌠🔭
 
 ## What you need to buy.
 
