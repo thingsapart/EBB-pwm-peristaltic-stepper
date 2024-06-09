@@ -1,6 +1,6 @@
 # Build guide
 
-This is the full build guide for the Realta EBBfocuser/
+This is the full build guide for the Realta EBBfocuser.
 
 ## What you need to buy.
 
