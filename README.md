@@ -1,7 +1,5 @@
 Todo: Better blurb at start
 
-Todo: Makesure SLT files are oriented correctly.
-
 Todo: Blurb for each code section.
 
 Todo: Table of commands and expected inputs.
