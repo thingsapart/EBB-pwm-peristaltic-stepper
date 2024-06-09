@@ -14,7 +14,7 @@ Todo: Table of commands and expected inputs.
 
 ## Project goals.
 
-+ Truley open source code i.e. do what you want with it.
++ truly open source code i.e. do what you want with it.
 + Using open hardware only i.e. schematic available.
 + Firmware created using Arduino IDE with full guide to get it working with the EBB.
 
@@ -78,7 +78,7 @@ The EBB36 comes with a power connector that needs to be crimped onto a power cab
 
 ![Connector Ideas](Guide/Images/PowerConnectorIdeas.png)
 
-I use the Anderson Power Pole connector in a victim cable configurationso that the Anderson connector receives the brunt of being plugged and unplugged as the connector on the PCB isn't really designed for that. I would however recommend cutting an existing cable for beginners because Anderson Power Poles are expensive and the DIY connectors sold on Amazon and the like need soldering and are fairly flimsy. 
+I use the Anderson Power Pole connector in a victim cable configuration so that the Anderson connector receives the brunt of being plugged and unplugged as the connector on the PCB isn't really designed for that. I would however recommend cutting an existing cable for beginners because Anderson Power Poles are expensive and the DIY connectors sold on Amazon and the like need soldering and are fairly flimsy. 
 
 ## What you need to 3D print.
 
@@ -160,7 +160,7 @@ Use two 10 mm hex bolts to screw the PCB into position. Do not over tighten.
 
 ### Connect to your PC.
 
-Connecting the EBB36 to your PC with a USB C cable will initially do nothing. The EBB36 is by default configured to use only power coming from its power connector, this power can range from a voltage of between 12 and 24v of power. So you need to connect both cables and make sure the power cable is powered. The default behaviour can be changed using one of the supplied jumpers however this is not recomended for this application.
+Connecting the EBB36 to your PC with a USB C cable will initially do nothing. The EBB36 is by default configured to use only power coming from its power connector, this power can range from a voltage of between 12v and 24v. So you need to connect both cables and make sure the power cable is powered. The default behaviour can be changed using one of the supplied jumpers however this is not recomended for this application.
 
 ![Attach wires](Guide/Images/AttachWires.png)
 
@@ -214,7 +214,7 @@ This opens a panel on the left hand side, in this search for "STM".
 
 ![STM Search](Guide/Images/STMSearch.png)
 
-### Select the and configure the board
+### Select and configure the board
 
 Use the "tools" menu again to select "3D printer boards"; 
 
@@ -277,7 +277,7 @@ This should open a window showing a file structure similar to the image below.
 > [!WARNING]  
 > One thing that might happen here is that Windows defender might decide that one of these files is a virus.
 > The file in question is the ASCOM driver installer and dealing with this will be discussed in a later section.
-> This has been a source of frustration for us and we have submitted a false positive investigation to microsoft. It seems to come from the Inno installer software and not the driver itself which is the installer recommended by the ASCOM team.  
+> This has been a source of frustration for us and we have submitted a false positive investigation to Microsoft. It seems to come from the Inno installer software and not the driver itself which is the installer recommended by the ASCOM team.  
 
 ### Compiling and uploading source files using Ardunio IDE.
 
