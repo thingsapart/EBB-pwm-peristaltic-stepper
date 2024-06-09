@@ -1,7 +1,5 @@
 Todo: Blurb for each code section.
 
-Todo: Settings windo contains generic text and has microsteps section wrong.
-
 # Realta Scope Tech EBBfocuser
 
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
