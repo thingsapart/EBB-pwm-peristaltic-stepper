@@ -1,20 +1,6 @@
-Todo: Better blurb at start
+# Build guide
 
-Todo: Insert motor wire connector picture
-
-Todo: Connecting the focuser to your PC images.
-
-Todo: Link to compiling in visual studio.
-
-# Realta Scope Tech EBBfocuser
-
-![EBB36 Focuser Case](Images/EBB36FinishedRCA.png)
-
-## Project goals.
-
-+ Truley open source code i.e. do what you want with it.
-+ Using open hardware only i.e. schematic available.
-+ Firmware created using Arduino IDE with full guide to get it working with the EBB.
+This is the full build guide for the Realta EBBfocuser/
 
 ## What you need to buy.
 
@@ -22,7 +8,7 @@ Todo: Link to compiling in visual studio.
 
 I have used a 23mm thick Nema 17 stepper motor like this 17HS4023. 
 
-![Nema 17](Guide/Images/17HS4023.png)
+![Nema 17](../Guide/Images/17HS4023.png)
 
 However, any NEMA stepper motor thicker than this will work but you are limited to 1.5A per phase by the EBB36 stepper motor driver. Even thinner motors will work but you will have a hard time mounting them as the case will foul most mounting brackets. The FreeCAD file containing the parts is included in this repository so can be edited to provide a spacer to pad out the difference in width if needed. 
 
@@ -34,7 +20,7 @@ There are two versions of this, one with an accelerometer and one without, both 
 
 ### Note about the EBB42
 
-Originallt this project was built around the EBB42 kit sold by big tree tech however we changed the design to use the EBB36 for two reasons; 
+Originally this project was built around the EBB42 kit sold by big tree tech however we changed the design to use the EBB36 for two reasons; 
 
 1) The PCB is smaller allowing for a smaller sized case and
 2) The power connector while smaller is of a more common type so should be easier to source replacements for.
@@ -69,6 +55,14 @@ It can also be a good idea to use ferrules for terminating the dew heater wires 
 ![Dupont crimping](Guide/Images/FerruleCrimping.png)
 
 One kit will get you enough connectors to last a lifetime. 
+
+### Power connector
+
+The EBB36 comes with a power connector that needs to be crimped onto a power cable of somekind. Below are some examples.
+
+![Connector Ideas](Guide/Images/PowerConnectorIdeas.png)
+
+I use the Anderson Power Pole connector in a victim cable configuration so that the Anderson connector receives the brunt of being plugged and unplugged as the connector on the PCB isn't really designed for that. I would however recommend cutting an existing cable for beginners because Anderson Power Poles are expensive and the DIY connectors sold on Amazon and the like need soldering and are fairly flimsy. 
 
 ## What you need to 3D print.
 
@@ -140,13 +134,19 @@ The case face plate needs to be positioned over the USB-C port and power connect
 
 The wire connector from the motor can now be connected to the PCB as shown below.
 
-Todo: Picture goes here!
+![Stepper motor connection](Guide/Images/StepperMotorConnector.png)
 
 ### Fit top of case
 
 Use two 10 mm hex bolts to screw the PCB into position. Do not over tighten.
 
 ![Fit PCB](Guide/Images/ScewTopCase.png)
+
+### Connect to your PC.
+
+Connecting the EBB36 to your PC with a USB C cable will initially do nothing. The EBB36 is by default configured to use only power coming from its power connector, this power can range from a voltage of between 12v and 24v. So you need to connect both cables and make sure the power cable is powered. The default behaviour can be changed using one of the supplied jumpers however this is not recomended for this application.
+
+![Attach wires](Guide/Images/AttachWires.png)
 
 ## Setting up the Arduino IDE for use with EBB36.
 
@@ -198,7 +198,7 @@ This opens a panel on the left hand side, in this search for "STM".
 
 ![STM Search](Guide/Images/STMSearch.png)
 
-### Select the and configure the board
+### Select and configure the board
 
 Use the "tools" menu again to select "3D printer boards"; 
 
@@ -261,7 +261,7 @@ This should open a window showing a file structure similar to the image below.
 > [!WARNING]  
 > One thing that might happen here is that Windows defender might decide that one of these files is a virus.
 > The file in question is the ASCOM driver installer and dealing with this will be discussed in a later section.
-> This has been a source of frustration for us and we have submitted a false positive investigation to microsoft. It seems to come from the Inno installer software and not the driver itself which is the installer recommended by the ASCOM team.  
+> This has been a source of frustration for us and we have submitted a false positive investigation to Microsoft. It seems to come from the Inno installer software and not the driver itself which is the installer recommended by the ASCOM team.  
 
 ### Compiling and uploading source files using Ardunio IDE.
 
@@ -338,6 +338,8 @@ If this is all too much for you to trust, and who can blame you, you can instead
 https://visualstudio.microsoft.com/vs/community/
 
 Windows defender does not complain about that at all. Details of whats needed to do this can be found in the visual studio section of this github repository.
+
+[Guide to compiling the Visual Studio project](Visual%20Studio/README.md)
 
 Its unlikely we will be able to get this driver install file signed as that costs money and this is just a fun open source project.
 
