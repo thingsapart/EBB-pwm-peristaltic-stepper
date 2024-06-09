@@ -1,9 +1,5 @@
 Todo: Better blurb at start
 
-Todo: Insert motor wire connector picture
-
-Todo: Connecting the focuser to your PC images.
-
 Todo: Link to compiling in visual studio.
 
 Todo: Makesure SLT files are oriented correctly.
