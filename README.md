@@ -6,6 +6,12 @@ Todo: Connecting the focuser to your PC images.
 
 Todo: Link to compiling in visual studio.
 
+Todo: Makesure SLT files are oriented correctly.
+
+Todo: Blurb for each code section.
+
+Todo: Table of commands and expected inputs.
+
 # Realta Scope Tech EBBfocuser
 
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
