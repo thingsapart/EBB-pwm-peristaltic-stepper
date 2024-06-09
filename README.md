@@ -353,7 +353,7 @@ https://visualstudio.microsoft.com/vs/community/
 
 Windows defender does not complain about that at all. Details of whats needed to do this can be found in the visual studio section of this github repository.
 
-Guide to compiling the Visual Studio project [Guide to compiling the Visual Studio project](Visual Studio/README.md)
+[Guide to compiling the Visual Studio project](Visual%20Studio/README.md)
 
 Its unlikely we will be able to get this driver install file signed as that costs money and this is just a fun open source project.
 
