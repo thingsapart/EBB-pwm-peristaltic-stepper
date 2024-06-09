@@ -7,7 +7,7 @@ No blocking serial port listener waiting for commands. Some of these commands re
 ## List of accepted commands
 
 |Code|Description|Paramters required|Example|Return value|
-|----|---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|-------------|------------------------|
+|----|---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|---------------------|------------------------|
 |G1|Sets target number of steps to move focuser to and will start the focuser moving.|Yes, long, number of steps |G1 4000#|None|
 |G2|Halt! Stops the focuser moving|No|G2#|None|
 |G3|Returns true (1) or false (0) depending on if the motor is moving or not|No|G3#|"1" or "0"|
