@@ -6,6 +6,8 @@ Todo: Blurb for each code section.
 
 Welcome to the Realta-EBBfocuser project! 🌟 If you’re a fellow stargazer, a curious tinkerer, or simply someone who appreciates the night sky, you’re in good company. 🚀
 
+This project makes use of an off the shelf PCB, the BigTreeTech EBB36, with neatly integrates a microcontroller and a stepper motor driver (TMC 2209). It includes all of the code needed and the 3D files needed to print your own case.
+
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
 
 ## What Is Realta-EBBfocuser?
