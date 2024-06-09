@@ -40,7 +40,7 @@ There are two versions of this, one with an accelerometer and one without, both 
 
 ### Note about the EBB42
 
-Originallt this project was built around the EBB42 kit sold by big tree tech however we changed the design to use the EBB36 for two reasons; 
+Originally this project was built around the EBB42 kit sold by big tree tech however we changed the design to use the EBB36 for two reasons; 
 
 1) The PCB is smaller allowing for a smaller sized case and
 2) The power connector while smaller is of a more common type so should be easier to source replacements for.
@@ -75,6 +75,14 @@ It can also be a good idea to use ferrules for terminating the dew heater wires 
 ![Dupont crimping](Guide/Images/FerruleCrimping.png)
 
 One kit will get you enough connectors to last a lifetime. 
+
+### Power connector
+
+The EBB36 comes with a power connector that needs to be crimped onto a power cable of somekind. Below are some examples.
+
+![Connector Ideas](Guide/Images/PowerConnectorIdeas.png)
+
+I use the Anderson Power Pole connector in a victim cable configurationso that the Anderson connector receives the brunt of being plugged and unplugged as the connector on the PCB isn't really designed for that. I would however recommend cutting an existing cable for beginners because Anderson Power Poles are expensive and the DIY connectors sold on Amazon and the like need soldering and are fairly flimsy. 
 
 ## What you need to 3D print.
 
@@ -146,13 +154,19 @@ The case face plate needs to be positioned over the USB-C port and power connect
 
 The wire connector from the motor can now be connected to the PCB as shown below.
 
-Todo: Picture goes here!
+![Stepper motor connection](Guide/Images/StepperMotorConnector.png)
 
 ### Fit top of case
 
 Use two 10 mm hex bolts to screw the PCB into position. Do not over tighten.
 
 ![Fit PCB](Guide/Images/ScewTopCase.png)
+
+### Connect to your PC.
+
+Connecting the EBB36 to your PC with a USB C cable will initially do nothing. The EBB36 is by default configured to use only power coming from its power connector, this power can range from a voltage of between 12 and 24v of power. So you need to connect both cables and make sure the power cable is powered. The default behaviour can be changed using one of the supplied jumpers however this is not recomended for this application.
+
+![Attach wires](Guide/Images/AttachWires.png)
 
 ## Setting up the Arduino IDE for use with EBB36.
 
