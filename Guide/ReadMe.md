@@ -16,7 +16,7 @@ However, any NEMA stepper motor thicker than this will work but you are limited 
 
 There are two versions of this, one with an accelerometer and one without, both will work but the accelerometer version is twice as expensive and no use of it is made in this project. 
 
-![EBB36 Focuser PCB](Guide/Images/EBB36PCB.png)
+![EBB36 Focuser PCB](../Guide/Images/EBB36PCB.png)
 
 ### Note about the EBB42
 
@@ -44,7 +44,7 @@ Please note I found it very easy to damage the screws these motors come with so 
 
 The EBB36 focuser comes with all the accessories you need to connect it up, it comes with all the cable fittings needed. However you will need to crimp these onto the wires yourself and a dupont or similar crimping tool greatly helps.
 
-![Dupont crimping](Guide/Images/DuPontCrimping.png)
+![Dupont crimping](../Guide/Images/DuPontCrimping.png)
 
 However it is possible to crimp using Needle Nose Pliers. 
 
@@ -52,7 +52,7 @@ However it is possible to crimp using Needle Nose Pliers.
 
 It can also be a good idea to use ferrules for terminating the dew heater wires used in the screw terminals.
 
-![Dupont crimping](Guide/Images/FerruleCrimping.png)
+![Dupont crimping](../Guide/Images/FerruleCrimping.png)
 
 One kit will get you enough connectors to last a lifetime. 
 
@@ -60,7 +60,7 @@ One kit will get you enough connectors to last a lifetime.
 
 The EBB36 comes with a power connector that needs to be crimped onto a power cable of somekind. Below are some examples.
 
-![Connector Ideas](Guide/Images/PowerConnectorIdeas.png)
+![Connector Ideas](../Guide/Images/PowerConnectorIdeas.png)
 
 I use the Anderson Power Pole connector in a victim cable configuration so that the Anderson connector receives the brunt of being plugged and unplugged as the connector on the PCB isn't really designed for that. I would however recommend cutting an existing cable for beginners because Anderson Power Poles are expensive and the DIY connectors sold on Amazon and the like need soldering and are fairly flimsy. 
 
@@ -68,11 +68,11 @@ I use the Anderson Power Pole connector in a victim cable configuration so that 
 
 The parts are designed to be printed easily on a printer using a 0.8mm nozzle so should be easy prints on any printer using a smaller nozzle. 
 
-![Printer](Guide/Images/3DPrintBed.png)
+![Printer](../Guide/Images/3DPrintBed.png)
 
 The bottom section of the case needs supports to print well, I used the support paint tool and the smart fill option to select the faces needing supports using Prusa Slicer.
 
-![Needs supports](Guide/Images/NeedsSupports.png)
+![Needs supports](../Guide/Images/NeedsSupports.png)
 
 ### Notes on filament type.
 
@@ -80,7 +80,7 @@ Stepper motors will get warm when operating and even when not moving they are be
 
 ## Assembling the case.
 
-![Exploded](Guide/Images/EBB36Exploded.png)
+![Exploded](../Guide/Images/EBB36Exploded.png)
 
 In this section we will cover the step by step assembly of the motor and case
 
@@ -94,7 +94,7 @@ Stepper motors like these are designed to work with four wire two phase motors. 
 
 If you can't test the wires its not the end of the world if they get mixed up the motor will just jitter around and move ineffectively and you just need to swapped two of the wires around in the connector housing.
 
-![Printer](Guide/Images/MotorPinPhases.png)
+![Printer](../Guide/Images/MotorPinPhases.png)
 
 The image above shows how the EBB36 PCB expects you to connect the phases, it doesn't matter that you connect AA from your motors documentation to AA on the header just that you keep both wires of each phase seperate from the others, swapping the order just reverses the direction of movement. The cables that came with my stepper motors had the pin order ABAB so I had to flip the two middle wires over.
 
@@ -102,19 +102,19 @@ The image above shows how the EBB36 PCB expects you to connect the phases, it do
 
 The case is mounted to the stepper motor using its own case mounting screws just using the longer replacement ones discussed earlier. The two screws that need removing are shown below. 
 
-![Insert Nema 17](Guide/Images/RemoveStepperScrews.png)
+![Insert Nema 17](../Guide/Images/RemoveStepperScrews.png)
 
 ### Insert NEMA 17 stepper motor
 
 The stepper motor will fit into the bottom half of the case when inserted at an angle.
 
-![Insert Nema 17](Guide/Images/InsertNema.png)
+![Insert Nema 17](../Guide/Images/InsertNema.png)
 
 Make sure its wires are connected and to feed them through to the other side of the case.
 
 Mount the case using the repacement bolts as shown below
 
-![Screw Nema 17](Guide/Images/screwNema.png)
+![Screw Nema 17](../Guide/Images/screwNema.png)
 
 Do not over tighten these (or any other bolts) just a moderate hand tighting will do.
 
@@ -122,31 +122,31 @@ Do not over tighten these (or any other bolts) just a moderate hand tighting wil
 
 The case face plate needs to be positioned over the USB-C port and power connector before fitting to the case.
 
-![Postion Face Plate](Guide/Images/FacePlate.png)
+![Postion Face Plate](../Guide/Images/FacePlate.png)
 
-![Postion Face Plates](Guide/Images/FacePlate2.png)
+![Postion Face Plates](../Guide/Images/FacePlate2.png)
 
 ### Fit EBB36 PCB
 
-![Fit PCB](Guide/Images/ScrewPCB.png)
+![Fit PCB](../Guide/Images/ScrewPCB.png)
 
 ### Insert motor wire connector
 
 The wire connector from the motor can now be connected to the PCB as shown below.
 
-![Stepper motor connection](Guide/Images/StepperMotorConnector.png)
+![Stepper motor connection](../Guide/Images/StepperMotorConnector.png)
 
 ### Fit top of case
 
 Use two 10 mm hex bolts to screw the PCB into position. Do not over tighten.
 
-![Fit PCB](Guide/Images/ScewTopCase.png)
+![Fit PCB](../Guide/Images/ScewTopCase.png)
 
 ### Connect to your PC.
 
 Connecting the EBB36 to your PC with a USB C cable will initially do nothing. The EBB36 is by default configured to use only power coming from its power connector, this power can range from a voltage of between 12v and 24v. So you need to connect both cables and make sure the power cable is powered. The default behaviour can be changed using one of the supplied jumpers however this is not recomended for this application.
 
-![Attach wires](Guide/Images/AttachWires.png)
+![Attach wires](../Guide/Images/AttachWires.png)
 
 ## Setting up the Arduino IDE for use with EBB36.
 
@@ -164,7 +164,7 @@ The EBB36 doesn't use a microcontroller of a type used by any of the boards supp
 
 Go to file -> preferences and add stm32duino
 
-![Board manager](Guide/Images/ArduinoPreferences.png)
+![Board manager](../Guide/Images/ArduinoPreferences.png)
 
 and add https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started to the "additional Boards Managers" section at the bottom. Wait for the definitions to download
 
@@ -178,13 +178,13 @@ You need to use file explorer to go open a file in the following impossibly long
 
 The file that needs editing is variant_EBB42_V1_1.h, its likely your PC doesn't have an application associated with this file type but its really just a text file so can be opened just fine in notepad.
 
-![Board manager](Guide/Images/ChooseAnotherApp.png)
+![Board manager](../Guide/Images/ChooseAnotherApp.png)
 
-![Board manager](Guide/Images/NotePadSelect.png)
+![Board manager](../Guide/Images/NotePadSelect.png)
 
 Once opened we need to add one line of text, #define FLASH_BANK_NUMBER	FLASH_BANK_1, as shown below.
 
-![Board manager](Guide/Images/EEPROM_WORK.png)
+![Board manager](../Guide/Images/EEPROM_WORK.png)
 
 Please note that forgetting this step will lead to some confusion later on as the arduino code will compile and upload just fine but will not work correctly in practice as it will never remember its position.
 
@@ -192,11 +192,11 @@ Please note that forgetting this step will lead to some confusion later on as th
 
 Back in arduino IDE use the "tools" -> Board manager menu at the top to add the STM32 boards to the IDE.
 
-![Board manager](Guide/Images/BoardsManager.png)
+![Board manager](../Guide/Images/BoardsManager.png)
 
 This opens a panel on the left hand side, in this search for "STM". 
 
-![STM Search](Guide/Images/STMSearch.png)
+![STM Search](../Guide/Images/STMSearch.png)
 
 ### Select and configure the board
 
@@ -204,15 +204,15 @@ Use the "tools" menu again to select "3D printer boards";
 
 tools -> STM32 MCU based boards -> 3D printer boards
 
-![Choose 3D Printers](Guide/Images/3DPrinterBoards.png)
+![Choose 3D Printers](../Guide/Images/3DPrinterBoards.png)
 
 Then use the newly added menus to select the board part number, the Big Tree Tech EBB42 uses all the same hardware and connections just on a slightly larger PCB. 
 
-![Choose EBB42](Guide/Images/BoardPartNumber.png)
+![Choose EBB42](../Guide/Images/BoardPartNumber.png)
 
 And upload method
 
-![Choose Upload method](Guide/Images/UploadMethod.png)
+![Choose Upload method](../Guide/Images/UploadMethod.png)
 
 Finally the board is ready to be used in Arduino IDE!
 
@@ -228,15 +228,15 @@ In order to comunicate with the TMC2209 stepper driver on the EBB36 PCB we need 
 
 To do this we use the manage libraries function from the Sketch menu option
 
-![Choose manage libraries](Guide/Images/ManageLibraries.png)
+![Choose manage libraries](../Guide/Images/ManageLibraries.png)
 
 Type TMCStepper into the search box and then install the latest version.
 
-![Search for TMXStepper](Guide/Images/TMCStepperLibrary.png)
+![Search for TMXStepper](../Guide/Images/TMCStepperLibrary.png)
 
 The console in the bottom right will show success when installation is successful. 
 
-![Console shows success](Guide/Images/ConsoleSuccess.png)
+![Console shows success](../Guide/Images/ConsoleSuccess.png)
 
 Now arduino IDE is fully ready to be used to program the EBB36!
 
@@ -244,19 +244,19 @@ Now arduino IDE is fully ready to be used to program the EBB36!
 
 Now we need to download the code and other files in this repository, on the main page there is a green "<> Code" button.
 
-![GITHub download link](Guide/Images/CodeDownloadZIP.png)
+![GITHub download link](../Guide/Images/CodeDownloadZIP.png)
 
 clicking it will give you the oprion to download a zip file, click that. This will result in a zip folder appearing in your downloads folder, right click on that an choose "Extract All..."
 
-![Extract All](Guide/Images/DownloadedZip1.png)
+![Extract All](../Guide/Images/DownloadedZip1.png)
 
 This will show a dialog box asking you where to unzip the file, leave the defaults but do click the "Shpw extracted files when complete" and click the "Extract" button.
 
-![Save it where?](Guide/Images/DownloadedZip2.png)
+![Save it where?](../Guide/Images/DownloadedZip2.png)
 
 This should open a window showing a file structure similar to the image below.
 
-![here are the folders](Guide/Images/UnzippedFolder.png)
+![here are the folders](../Guide/Images/UnzippedFolder.png)
 
 > [!WARNING]  
 > One thing that might happen here is that Windows defender might decide that one of these files is a virus.
@@ -271,19 +271,19 @@ Go to the folder
 
 and double click "EBBTelescopeFocuser.ino"
 
-![EBB42TelescopeFocuser.ino](Guide/Images/OpenArduinoCodeFile.png) 
+![EBB42TelescopeFocuser.ino](../Guide/Images/OpenArduinoCodeFile.png) 
 
 We are now ready to upload the arduino code to the EBB36 however we must first put the EBB36 into upload mode. Connect the EBB36 to your computer using a suitable cable and connect it to a 12v power source. You should here your computer beep when its connected. 
 
 Once this id done the EBB36 can be put into upload mode by pressing two buttons on the PCB, you can do this either by removing the case or using two tooth picks and a little trial and error.
 
-![click hold click](Guide/Images/PutPCBintoUploadMode.png) 
+![click hold click](../Guide/Images/PutPCBintoUploadMode.png) 
 
 You need to press and hold the button closest to the port panel and then click the other button once and release both. You should here a beep again as the device disconnects again.
 
 Now that is done back in Arduino IDE we need to click the "upload" arrow button in the top left.
 
-![upload arrow](Guide/Images/uploadbutton.png)
+![upload arrow](../Guide/Images/uploadbutton.png)
 
 Once clicked the arduino code will be first compiled and then uploaded to the focuser. The first time you do this it can take a while as the STM32CubeProgrammer from earlier is silently opened in the background. 
 
@@ -313,25 +313,25 @@ However, there are quite a few things that can go wrong here!
 
 The first is that Windows could see the drivers installer as a virus. In order to resolve this you need to go into the "Virus & threat protection" section of Windows settings and choose "Protection history"
 
-![Windows Defender fun](Guide/Images/Frustration03.png)
+![Windows Defender fun](../Guide/Images/Frustration03.png)
 
 Then you need expand the most recent "Threat quarantined" section and in the bottom section "Actions" choose "Restore".
 
-![Windows Defender fun](Guide/Images/WindowsThinksItsAVirus.png)
+![Windows Defender fun](../Guide/Images/WindowsThinksItsAVirus.png)
 
 As stated earlier we have submitted a false detection request to Microsoft.
 
 Even once past this issue Windows will now decide that the software is suspect because its not security signed. Double clicking the file will get you a warning like the following.
 
-![Windows Defender fun](Guide/Images/Frustration01.png)
+![Windows Defender fun](../Guide/Images/Frustration01.png)
 
 Clicking the "More info" text will make a new button appear "Run anyway" appear, clicking that will finally allow you to install the driver.
 
-![Windows Defender fun](Guide/Images/Frustration02.png)
+![Windows Defender fun](../Guide/Images/Frustration02.png)
 
 Click accept agreement and then next.
 
-![Finally install the software](Guide/Images/AcceptAgreement.png)
+![Finally install the software](../Guide/Images/AcceptAgreement.png)
 
 If this is all too much for you to trust, and who can blame you, you can instead compile the driver using Microsoft Visual Studio community eddition.
 
@@ -339,7 +339,7 @@ https://visualstudio.microsoft.com/vs/community/
 
 Windows defender does not complain about that at all. Details of whats needed to do this can be found in the visual studio section of this github repository.
 
-[Guide to compiling the Visual Studio project](Visual%20Studio/README.md)
+[Guide to compiling the Visual Studio project](../Visual%20Studio/README.md)
 
 Its unlikely we will be able to get this driver install file signed as that costs money and this is just a fun open source project.
 
@@ -349,25 +349,25 @@ Now that you have all the software installed you can start using the focuser. In
 
 https://nighttime-imaging.eu/
 
-![Windows Defender fun](Guide/Images/NINAFocuser01.png)
+![Windows Defender fun](../Guide/Images/NINAFocuser01.png)
 
 Opening the settings menu is needed because the port the focuser is connected to needs to be selected.
 
-![Windows Defender fun](Guide/Images/NINAFocuser02.png)
+![Windows Defender fun](../Guide/Images/NINAFocuser02.png)
 
 If you are lucky there will be only one option to choose from, but on our PC there is a built in COM port for controling RGB lights of all things!
 
 If its not clear what port to choose you can working out by using windows device manager (right click the start menu button) expanding the "Ports (COM & LPT)" section and unpluging the focusers USB cable from your PC, the comport should disappear from the list.
 
-![Windows Defender fun](Guide/Images/NINAFocuser03.png)
+![Windows Defender fun](../Guide/Images/NINAFocuser03.png)
 
 Once selelcted click ok, this will close you out of the settings window and now you need to click the "connect" button that looks like a power icon. 
 
-![Windows Defender fun](Guide/Images/NINAFocuser03a.png)
+![Windows Defender fun](../Guide/Images/NINAFocuser03a.png)
 
 This will connect you to the focuser and the information on the screen should change to the following.
 
-![Windows Defender fun](Guide/Images/NINAFocuser04.png)
+![Windows Defender fun](../Guide/Images/NINAFocuser04.png)
 
 Here is a pretty good guide to setting up a focuser we found on Youtube, its for a different focuser but the idea is the same.
 
