@@ -14,7 +14,7 @@ No blocking serial port listener waiting for commands. Some of these commands re
 |G4|Returns the current number of steps the focuser is currently at|No|G4#|long as string "4000"|
 |G5|Changes the current number of steps without moving|Yes, long, number of steps |G5 4000#|None|
 |G6|Sets motor current in micro amps|Yes interger|G6 500#|None|
-|G7|Returns current motor current setting in micro amps|No|G7#|interger as string "500"|
+|G7|Returns current motor current setting in micro amps|No|G7#|integer as string "500"|
 |G8|Sets motor drivers number of micro steps|Yes, 0, 8, 16, 32, 64,128, 256|G8 16#|None|
 |G9|Returns current number of micro steps|No|G9#|integer as string "36"|
 |G10|Sets heater PWM value|Yes byte betwen 0 and 255|G10 128#|None|
