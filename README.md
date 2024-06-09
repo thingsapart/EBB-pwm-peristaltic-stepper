@@ -2,8 +2,6 @@ Todo: Better blurb at start
 
 Todo: Blurb for each code section.
 
-Todo: Table of commands and expected inputs.
-
 # Realta Scope Tech EBBfocuser
 
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
