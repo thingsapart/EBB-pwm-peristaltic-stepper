@@ -1,4 +1,10 @@
-Hello
+# Arduino IDE firmware, C++
+
+### Overview
+
+No blocking serial port listener waiting for commands. Some of these commands required a stepper motor to move, this move is also handdled in a non blocking way which enables the motor to be halted while it is moving. List libraries it uses, give attribution to other open source library.
+
+## List of accepted commands
 
 |Code|Description|Paramters required|Example|Return value|
 |----|---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|-------------|------------------------|
