@@ -4,39 +4,43 @@ Todo: Settings windo contains generic text and has microsteps section wrong.
 
 # Realta Scope Tech EBBfocuser
 
-Welcome to the Realta-EBBfocuser project! 🌟 If you’re a fellow stargazer, a curious tinkerer, or simply someone who appreciates the night sky, you’re in good company. 🚀
-
-This project makes use of an off the shelf PCB, the BigTreeTech EBB36, with neatly integrates a microcontroller and a stepper motor driver (TMC 2209). It includes all of the code needed and the 3D files needed to print your own case.
-
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
 
-## What Is Realta-EBBfocuser?
+Welcome to the Realta EBBfocuser Project! This initiative is dedicated to creating a precise, customizable, and open-source focuser for telescopes. By leveraging the power of the maker community and freely available hardware, we've developed a solution that promotes collaboration and innovation.
 
-Realta-EBBfocuser is a humble endeavor I put together to showcase my contributions beyond the classroom. Here’s the essence of it:
+## Project Overview
 
-### The Celestial Quest:
+The heart of our project is the Bigtree Tech EBB36, a versatile stepper motor driver and microcontroller. This component is combined with a 3D printed case, custom firmware developed using the Arduino IDE, and a Windows driver built on the ASCOM framework. Together, these elements create a powerful and user-friendly telescope focuser designed for makers and enthusiasts who value customization and open-source principles.
 
-* Picture a telescope that adjusts its focus automatically—no manual tweaks required. That’s the heart of Realta-EBBfocuser.
+## Key Components
 
-* Our tool of choice? The BIGTREETECH EBB36 3D printer board (version 1.1). Practical stargazing just got a tad more fascinating.
+Bigtree Tech EBB36: This stepper motor driver and microcontroller serves as the brain of our focuser, providing precise control over the telescope's focusing mechanism.
 
-### For Makers, By Makers:
+3D Printed Case: The case, designed to house the EBB36 and other components securely, can be easily printed using any standard 3D printer. It ensures the electronics are protected while maintaining accessibility for adjustments and upgrades.
 
-* This isn’t rocket science (though it flirts with the cosmos). It’s about having fun while tinkering with hardware.
+Arduino IDE Firmware: Our custom firmware, developed in the Arduino IDE, allows for seamless communication between the EBB36 and the focusing mechanism. The firmware is open source, enabling users to modify and improve it according to their needs.
 
-* If you’re part of the astronomy-loving maker community, grab your NEMA 17 stepper motor, dust off that EBB36 board, and let’s embark on this journey together!
+ASCOM Framework Driver: The ASCOM (Astronomy Common Object Model) framework driver ensures compatibility with a wide range of astronomy software, providing a standardized interface for controlling the focuser through a Windows environment.
 
-### What’s Under the Hood:
+## Features and Benefits
 
-* Open-source code? Absolutely. Schematics? Included.
+Open Source: All aspects of the Realta EBBfocuser, from the firmware to the case design, are open source. This allows users to freely modify, enhance, and share improvements, fostering a collaborative community.
+Maker-Centric Design: The project is designed with makers in mind. Whether you enjoy 3D printing, coding, or electronics, the Realta EBBfocuser offers numerous opportunities to get hands-on and customize your setup.
 
-* Our firmware dances to the Arduino IDE’s tune. And yes, I’ve documented it all for fellow stargazers.
+Precision: The Bigtree Tech EBB36 offers high precision control, essential for achieving sharp focus in astrophotography and observation.
 
-### Join the Stellar Crew
+Compatibility: With the ASCOM driver, our focuser can be easily integrated with a wide array of existing astronomy software, enhancing its usability and versatility.
+Getting Started
 
-Whether you’re an amateur astronomer, a seasoned observer, or someone who finds wonder in the night, Realta-EBBfocuser invites you to join our cosmic crew. 🌌✨
+To get started with the Realta EBBfocuser Project, you will need:
 
-Explore the project on GitHub and let’s explore the universe, one focus adjustment at a time! 🌠🔭
++ A Bigtree Tech EBB36 stepper motor driver and microcontroller
++ A 3D printer to print the custom-designed case
++ Basic electronics tools and components
++ The Arduino IDE for firmware installation and customization
++ A Windows PC for installing the ASCOM driver and controlling the focuser
+
+We invite you to join our community, contribute to the project, and share your experiences. By working together, we can push the boundaries of what's possible in telescope focusing, making advanced astrophotography and observation more accessible to everyone.
 
 ## What you need to buy.
 
