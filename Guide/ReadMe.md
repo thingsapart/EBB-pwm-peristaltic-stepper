@@ -365,10 +365,17 @@ Once selelcted click ok, this will close you out of the settings window and now 
 
 ![Windows Defender fun](../Guide/Images/NINAFocuser03a.png)
 
-This will connect you to the focuser and the information on the screen should change to the following.
-
+If you open the settings dialog again you will see that previously greyed out settings can now be changed.
 
 ![Windows Defender fun](../Guide/Images/NINAFocuser04.png)
+
+Here's what each option does.
+
+* Current: This changes the max current the stepper motor can draw, its in milliamps.
+* Motor Position: You can overide the position of the motor i.e. reset it to a more useful value.
+* Micro steps: Stepper motors have a native number of steps per rotation derived from their physical design however modern stepper drivers allow you to split that native number of steps into fractions or micro steps. You have choice between 8,16,32,64,128 and 256. Please note each sub division makes the focuser turn slower and has less torgue so might slip with heavy loads.
+* Heater value: The EBB32 has a mosfet controlled output that can be used to drive DC heating elements like dew bands. This changes the power output from 0 on the left to 100% on the right.
+* Motor Engaged: When powered on stepper motors will lock themselves into position when not moving, this option allows you to turn that feature off. Please note it will automatically switch back on if you move the motor via software. This allows you to change the focus of the telescope while the focuser is connected.
 
 Here is a pretty good guide to setting up a focuser we found on Youtube, its for a different focuser but the idea is the same.
 
