@@ -1,5 +1,3 @@
-Todo: Blurb for each code section.
-
 # Realta Scope Tech EBBfocuser
 
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
