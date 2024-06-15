@@ -1,6 +1,6 @@
 # Arduino IDE firmware, C++
 
-### Overview
+## Overview
 
 The system incorporates a non-blocking serial port listener designed to await and process incoming commands efficiently. The commands are handled in a non blocking manner so that the motor's movements can be halted at any time. 
 
@@ -25,3 +25,9 @@ Leveraging the TMCStepper library by teemuatlut, our solution extends the base c
 |G12|Engage motor, true/false|Yes true "1" or false "0"|G12 1#|None|
 |G13|Returns motor engaged state, true or false|No|G13#|"1" or "0"|
 |G14|Resets saved settings to default, current position to 50,000, motor current to 500 micro amps and microsteps to 8|No|G14#|None|
+
+## Future plans/changes
+
+The code doesn't use any of the common C++ style naming conventions, its my first C++ program so only discovered them at the end of creating this project. For example some conventions use underscores in member names i.e. memberName_ is a private member of a class. 
+
+There is also no error checking on the text being sent between the PC and the microcontroller, a simple checksum at the end would probably be good enough. Extremely long strings being sent over the serial connection can also lead to the microcontroller running out of RAM lol. 
