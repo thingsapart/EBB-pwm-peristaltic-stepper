@@ -36,7 +36,7 @@ To secure the EBB36 you will need
 2 6mm M3 bolts to secure the PCB
 
 2 to secure the stepper motor and their length depends on how thick the stepper motor is, the original bolts 
-will not reach through the combined thickness of the case and motor so you will need 2 replacement ones. I found that for the 23mm thick motor I could use 22mm long M3 bolts, which is unfortunatly not that common a size but Amazon sellers did have them. 
+will not reach through the combined thickness of the case and motor so you will need 2 replacement ones. I found that for the 23mm thick motor I could use 22mm long M3 bolts, which is unfortunatly not that common a size but Amazon sellers did have them, the STL files for the printed parts offer a couple of options of different offsets for the mounting of these bolts which should allow for fine tuning to match bolt size to stepper motor thickness.
 
 Please note I found it very easy to damage the screws these motors come with so please make sure you use an appropriately sized scew driver before attempting to remove them. 
 
