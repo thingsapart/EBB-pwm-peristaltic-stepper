@@ -54,6 +54,10 @@ You should see a success message something like below.
 
 ![Success](RebuildAllSuccessful.png)
 
+# Future plans/changes
+
+The vb.net program uses a custom method to block parallel access to the serial connection to the stepper motor, it probably should use mutex's but I couldn't get them working with the ASCOM framework provided. However I would prefer to work on a C# version of the driver and implement the mutex there.
+
 
 
 
