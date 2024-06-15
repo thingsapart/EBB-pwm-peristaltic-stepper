@@ -1,8 +1,12 @@
-Todo: Blurb about what the visual studio code is.
-
 # Overview of Visual Studio project
 
-Todo: Blurb....including uses .net framework provided by ASCOM team, is VB.net, added custom options to settings menu and simply implemented serial send and recieves as required by ASCOM, note building on someone elses work.
+Uses VB.net
+
+Edited code template provided by ASCOM (https://www.ascom-standards.org) to add the required G commands for the focuser, and added additional elements to the settings form.
+
+# ASCOM compliance test
+
+![Conform Success](../Guide/Images/ConformSuccess.png)
 
 # How to open and compile VS project.
 
