@@ -43,4 +43,4 @@ We invite you to join our community, contribute to the project, and share your e
 
 The full guide to completing this project can be found here.
 
-[Realta EBBfocuser complete guide](../Guide/ReadMe.md)
+[Realta EBBfocuser complete guide](/Guide/ReadMe.md)
