@@ -2,9 +2,10 @@
 
 ### Overview
 
-No blocking serial port listener waiting for commands. Some of these commands required a stepper motor to move, this move is also handdled in a non blocking way which enables the motor to be halted while it is moving.
+The system incorporates a non-blocking serial port listener designed to await and process incoming commands efficiently. The commands are handled in a non blocking manner so that the motor's movements can be halted at any time. 
 
-Uses TMCStepper library by teemuatlut. Extends class and adds methods to control the movement of the motor and turning on and off of the heater element. Created methods to read serial communications and split text recieved over the serial port into commands and parameters. Commands and parameters interpreted by main to give desired functions of the focuser
+Leveraging the TMCStepper library by teemuatlut, our solution extends the base class and introduces methods for precise motor control and the regulation of the heater element. Custom methods have been developed to facilitate the reading of serial communications, parsing received text into discrete commands and parameters. These commands and parameters are then interpreted by the main system to execute the desired functions of the focuser with high precision and reliability.
+
 
 ## List of accepted commands
 
