@@ -1,5 +1,3 @@
-Todo: edit OpenAProjectOrSolution.png so it doesn't have crazy list of all old projects lol.
-
 # Realta Scope Tech EBBfocuser
 
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
