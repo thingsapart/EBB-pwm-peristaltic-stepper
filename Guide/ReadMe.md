@@ -74,6 +74,10 @@ The bottom section of the case needs supports to print well, I used the support 
 
 ![Needs supports](../Guide/Images/NeedsSupports.png)
 
+Please note the 4 screw holes needed to secure the case to the stepper motor will be bridged over during printing with a single layer of filament, this can be easily poked through with a small philips screw driver. 
+
+The design should be printed at 0.2mm layer height with a 0.4mm nozzle. 
+
 ### Notes on filament type.
 
 Stepper motors will get warm when operating and even when not moving they are being held in place by powered magnetic fields. They are designed to cope with very very high temperatures. The firmware provided does make use of the TMC2209's CoolStep technology which greatly lowers the current drawn when not moving however the motor will still get warm to the touch, around 40c to 50c is common. This means you really should think twice about using a filament such as PLA which will start going floppy around this temperature. PETG would be better but ABS or ASA would be best. 
