@@ -14,7 +14,7 @@ However, any NEMA stepper motor thicker than this will work but you are limited 
 
 ### BigTreeTech EBB36 
 
-There are two versions of this, one with an accelerometer and one without, both will work but the accelerometer version is twice as expensive and no use of it is made in this project. 
+There are two versions of this, one with an accelerometer and one without, both will work but the accelerometer version is twice as expensive and no use of it is made in this project. There are multiple versions of this PCB and this code will work with all of them however version 1 of the board uses a different pin for the optional dew heater control. Version 1.1 and 1.2 seem identical in function. 
 
 ![EBB36 Focuser PCB](../Guide/Images/EBB36PCB.png)
 
@@ -302,13 +302,23 @@ The windows ASCOM driver can be found in folder
 
 "%UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\ASCOM driver"
 
+First the properties of the InstallDriver.bat file need to be changed to allow windows to run a downloaded file. Right click on the file and choose "Properties"
+
 ![Windows Defender fun](../Guide/Images/BATProperty.png)
+
+Tick the little box in the bottom right.
 
 ![Windows Defender fun](../Guide/Images/InstallBatProperties.png)
 
+Now right click InstallDriver.bat and choose "Run as administrator"
+
 ![Windows Defender fun](../Guide/Images/RunBATasAdmin.png)
 
+Success should look like this with two "Types registered successfully" messages.
+
 ![Windows Defender fun](../Guide/Images/BATSuccess.png)
+
+Press any key to get this window to close or wait 200 seconds and it will close itself.
 
 ## How to use ASCOM driver (Using N.I.N.A).
 
