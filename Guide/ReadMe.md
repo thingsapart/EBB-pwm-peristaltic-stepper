@@ -258,11 +258,6 @@ This should open a window showing a file structure similar to the image below.
 
 ![here are the folders](../Guide/Images/UnzippedFolder.png)
 
-> [!WARNING]  
-> One thing that might happen here is that Windows defender might decide that one of these files is a virus.
-> The file in question is the ASCOM driver installer and dealing with this will be discussed in a later section.
-> This has been a source of frustration for us and we have submitted a false positive investigation to Microsoft. It seems to come from the Inno installer software and not the driver itself which is the installer recommended by the ASCOM team.  
-
 ### Compiling and uploading source files using Ardunio IDE.
 
 Go to the folder 
@@ -307,41 +302,6 @@ The windows ASCOM driver can be found in folder
 
 "%UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\ASCOM driver"
 
-double clicking "Realta EBB focuser Setup.exe" will install the driver.
-
-However, there are quite a few things that can go wrong here!
-
-The first is that Windows could see the drivers installer as a virus. In order to resolve this you need to go into the "Virus & threat protection" section of Windows settings and choose "Protection history"
-
-![Windows Defender fun](../Guide/Images/Frustration03.png)
-
-Then you need expand the most recent "Threat quarantined" section and in the bottom section "Actions" choose "Restore".
-
-![Windows Defender fun](../Guide/Images/WindowsThinksItsAVirus.png)
-
-As stated earlier we have submitted a false detection request to Microsoft.
-
-Even once past this issue Windows will now decide that the software is suspect because its not security signed. Double clicking the file will get you a warning like the following.
-
-![Windows Defender fun](../Guide/Images/Frustration01.png)
-
-Clicking the "More info" text will make a new button appear "Run anyway" appear, clicking that will finally allow you to install the driver.
-
-![Windows Defender fun](../Guide/Images/Frustration02.png)
-
-Click accept agreement and then next.
-
-![Finally install the software](../Guide/Images/AcceptAgreement.png)
-
-If this is all too much for you to trust, and who can blame you, you can instead compile the driver using Microsoft Visual Studio community eddition.
-
-https://visualstudio.microsoft.com/vs/community/
-
-Windows defender does not complain about that at all. Details of whats needed to do this can be found in the visual studio section of this github repository.
-
-[Guide to compiling the Visual Studio project](../Visual%20Studio/README.md)
-
-Its unlikely we will be able to get this driver install file signed as that costs money and this is just a fun open source project.
 
 ## How to use ASCOM driver (Using N.I.N.A).
 
