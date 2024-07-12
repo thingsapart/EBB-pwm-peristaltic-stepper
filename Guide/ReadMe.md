@@ -302,6 +302,13 @@ The windows ASCOM driver can be found in folder
 
 "%UserProfile%\Downloads\Realta-EBBfocuser-main\Realta-EBBfocuser-main\ASCOM driver"
 
+![Windows Defender fun](../Guide/Images/BATProperty.png)
+
+![Windows Defender fun](../Guide/Images/InstallBatProperties.png)
+
+![Windows Defender fun](../Guide/Images/RunBATasAdmin.png)
+
+![Windows Defender fun](../Guide/Images/BATSuccess.png)
 
 ## How to use ASCOM driver (Using N.I.N.A).
 
