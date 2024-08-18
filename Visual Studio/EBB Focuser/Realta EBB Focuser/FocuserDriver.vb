@@ -79,6 +79,9 @@ Public Class Focuser
 
     Friend Shared objSerial As ASCOM.Utilities.Serial
     Friend Shared isBusy As Boolean = False
+
+    Private MyOtherSetting As OtherSettings = New OtherSettings()
+
     '
     ' Constructor - Must be public for COM registration!
     '
@@ -224,7 +227,7 @@ Public Class Focuser
             End If
 
             If value Then
-                'CoverCalibrator.vMyFlatMakerSerial.OpenSerialPort(comPort)
+
                 TL.LogMessage("Connected Set", "Connecting to port " + comPort)
                 Focuser.objSerial = New ASCOM.Utilities.Serial
                 Focuser.objSerial.PortName = comPort
@@ -233,21 +236,21 @@ Public Class Focuser
                 Focuser.objSerial.DataBits = 8
                 Focuser.objSerial.StopBits = SerialStopBits.One
                 Focuser.objSerial.Handshake = SerialHandshake.None
-                'objSerial.DTREnable = True
-                'objSerial.RTSEnable = True
                 Focuser.objSerial.ReceiveTimeout = 5
                 Focuser.objSerial.Connected = True
 
                 Threading.Thread.Sleep(2000)
 
+                'MyOtherSetting.InitUI()
                 connectedState = True
-                'vIsConnect = connectedState
+
+                MyOtherSetting.ShowDialog()
+
 
             Else
                 TL.LogMessage("Connected Set", "Disconnecting from port " + comPort)
                 Focuser.objSerial.Connected = False
                 connectedState = False
-                'vIsConnect = connectedState
             End If
         End Set
 
@@ -273,7 +276,7 @@ Public Class Focuser
         Get
             Dim m_version As Version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version
             ' TODO customise this driver description
-            Dim s_driverInfo As String = "Realta EBB driver by Gerorge Moran. Version: " + m_version.Major.ToString() + "." + m_version.Minor.ToString()
+            Dim s_driverInfo As String = "Realta EBB driver by Gerorge Moran. Version: 1.1"
             TL.LogMessage("DriverInfo Get", s_driverInfo)
             Return s_driverInfo
         End Get
@@ -285,8 +288,8 @@ Public Class Focuser
     Public ReadOnly Property DriverVersion() As String Implements IFocuserV3.DriverVersion
         Get
             ' Get our own assembly and report its version number
-            TL.LogMessage("DriverVersion Get", Reflection.Assembly.GetExecutingAssembly.GetName.Version.ToString(2))
-            Return Reflection.Assembly.GetExecutingAssembly.GetName.Version.ToString(2)
+            TL.LogMessage("DriverVersion Get", "1.1")
+            Return "1.1"
         End Get
     End Property
 
@@ -325,6 +328,7 @@ Public Class Focuser
         utilities = Nothing
         astroUtilities.Dispose()
         astroUtilities = Nothing
+        MyOtherSetting.Hide()
     End Sub
 
 #End Region
@@ -567,7 +571,7 @@ Public Class Focuser
     ''' <summary>
     ''' Write the device configuration to the  ASCOM  Profile store
     ''' </summary>
-    Friend Sub WriteProfile()
+    Public Shared Sub WriteProfile()
         Using driverProfile As New Profile()
             driverProfile.DeviceType = "Focuser"
             driverProfile.WriteValue(driverID, traceStateProfileName, traceState.ToString())

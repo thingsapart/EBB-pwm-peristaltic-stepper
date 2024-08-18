@@ -3,8 +3,14 @@ Imports System.Windows.Forms
 Imports ASCOM.EBB
 Imports ASCOM.Utilities
 
-<ComVisible(False)> _
+<ComVisible(False)>
 Public Class SetupDialogForm
+
+    Dim vCurrent As String
+    Dim vMSteps As String
+    Dim vHeater As String
+    Dim vEngaged As Boolean
+    Dim vMotorPosition As String
 
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click ' OK button event handler
         ' Persist new values of user settings to the ASCOM profile
@@ -21,24 +27,44 @@ Public Class SetupDialogForm
 
             Focuser.isBusy = True
 
-            Focuser.objSerial.Transmit("G6" + " " + CurrentBox.Value.ToString + "#")
-            Threading.Thread.Sleep(200)
-            Focuser.objSerial.Transmit("G5" + " " + MotorPos.Value.ToString + "#")
-            Threading.Thread.Sleep(200)
-            Focuser.objSerial.Transmit("G8" + " " + NoSteps.SelectedItem.ToString() + "#")
-            Threading.Thread.Sleep(200)
-            Focuser.objSerial.Transmit("G10" + " " + HeaterVal.Value.ToString + "#")
-            Threading.Thread.Sleep(200)
-            If MotorEngaged.Checked = True Then
-                Focuser.objSerial.Transmit("G12 1#")
-            Else
-                Focuser.objSerial.Transmit("G12 0#")
+            If CurrentBox.Value.ToString <> vCurrent Then
+                'MsgBox("Current changed")
+                Focuser.objSerial.Transmit("G6" + " " + CurrentBox.Value.ToString + "#")
+                Threading.Thread.Sleep(200)
             End If
-            Threading.Thread.Sleep(200)
 
-                Focuser.isBusy = False
-
+            If MotorPos.Value.ToString <> vMotorPosition Then
+                'MsgBox("Motor positon changed")
+                Focuser.objSerial.Transmit("G5" + " " + MotorPos.Value.ToString + "#")
+                Threading.Thread.Sleep(200)
             End If
+
+            If NoSteps.SelectedItem.ToString() <> vMSteps Then
+                'MsgBox("MSteps changed")
+                Focuser.objSerial.Transmit("G8" + " " + NoSteps.SelectedItem.ToString() + "#")
+                Threading.Thread.Sleep(200)
+            End If
+
+            If HeaterVal.Value.ToString <> vHeater Then
+                'MsgBox("Heater changed")
+                Focuser.objSerial.Transmit("G10" + " " + HeaterVal.Value.ToString + "#")
+                Threading.Thread.Sleep(200)
+            End If
+
+            If vEngaged <> MotorEngaged.Checked Then
+                'MsgBox("Engaged changed")
+                If MotorEngaged.Checked = True Then
+                    Focuser.objSerial.Transmit("G12 1#")
+                Else
+                    Focuser.objSerial.Transmit("G12 0#")
+                End If
+                Threading.Thread.Sleep(200)
+            End If
+
+            Focuser.isBusy = False
+
+        End If
+
             Me.DialogResult = System.Windows.Forms.DialogResult.OK
         Me.Close()
     End Sub
@@ -84,7 +110,6 @@ Public Class SetupDialogForm
 
             Focuser.isBusy = True
 
-
             Focuser.objSerial.Transmit("G7" + "#" + vbCrLf)
             Threading.Thread.Sleep(200)
 
@@ -92,7 +117,8 @@ Public Class SetupDialogForm
             s = Focuser.objSerial.ReceiveTerminated("#")
             s = s.Replace("#", "")
             CurrentBox.Enabled = True
-            CurrentBox.Value = s
+            vCurrent = s
+            CurrentBox.Value = vCurrent
 
             Focuser.objSerial.Transmit("G4" + "#" + vbCrLf)
             Threading.Thread.Sleep(200)
@@ -100,7 +126,8 @@ Public Class SetupDialogForm
             s = Focuser.objSerial.ReceiveTerminated("#")
             s = s.Replace("#", "")
             MotorPos.Enabled = True
-            MotorPos.Value = s
+            vMotorPosition = s
+            MotorPos.Value = vMotorPosition
 
             Focuser.objSerial.Transmit("G9" + "#" + vbCrLf)
             Threading.Thread.Sleep(200)
@@ -108,8 +135,8 @@ Public Class SetupDialogForm
             s = Focuser.objSerial.ReceiveTerminated("#")
             s = s.Replace("#", "")
             NoSteps.Enabled = True
-            NoSteps.SelectedItem = s
-
+            vMSteps = s
+            NoSteps.SelectedItem = vMSteps
 
             Focuser.objSerial.Transmit("G11" + "#" + vbCrLf)
             Threading.Thread.Sleep(200)
@@ -117,7 +144,8 @@ Public Class SetupDialogForm
             s = Focuser.objSerial.ReceiveTerminated("#")
             s = s.Replace("#", "")
             HeaterVal.Enabled = True
-            HeaterVal.Value = (s)
+            vHeater = s
+            HeaterVal.Value = vHeater
 
 
             Focuser.objSerial.Transmit("G13" + "#" + vbCrLf)
@@ -128,8 +156,10 @@ Public Class SetupDialogForm
             MotorEngaged.Enabled = True
             If s = "1" Then
                 MotorEngaged.Checked = True
+                vEngaged = True
             Else
                 MotorEngaged.Checked = False
+                vEngaged = False
             End If
 
             Focuser.isBusy = False
@@ -144,7 +174,4 @@ Public Class SetupDialogForm
 
     End Sub
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
-    End Sub
 End Class
