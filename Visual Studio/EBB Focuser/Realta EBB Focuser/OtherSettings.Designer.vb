@@ -91,7 +91,7 @@ Partial Class OtherSettings
         'NoSteps
         '
         Me.NoSteps.FormattingEnabled = True
-        Me.NoSteps.Items.AddRange(New Object() {"0", "8", "16", "32", "64", "128", "256"})
+        Me.NoSteps.Items.AddRange(New Object() {"8", "16", "32", "64", "128", "256"})
         Me.NoSteps.Location = New System.Drawing.Point(45, 93)
         Me.NoSteps.Margin = New System.Windows.Forms.Padding(2)
         Me.NoSteps.Name = "NoSteps"
