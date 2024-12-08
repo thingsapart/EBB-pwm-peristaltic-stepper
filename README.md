@@ -2,6 +2,10 @@
 
 Connect PWM output to EBB36 pin (??). The PWM frequency determines the stepper's rotation speed and thus the pump output.
 
+Works with eg:
+* [Peristaltic Pump _ Nema 17 _ 608 Bearings](https://www.printables.com/model/910253-peristaltic-pump-_-nema-17-_-608-bearings/files) by ZRNNN, or 
+* [Nema 17 Peristaltic Pump-608 Bearings-cooling water-engine oil-water](https://www.printables.com/model/974385-nema-17-peristaltic-pump-608-bearings-cooling-wate/files) by Michel.
+
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
 
 -------------------
