@@ -2,7 +2,21 @@
 
 Connect PWM output to EBB36 pin (??). The PWM frequency determines the stepper's rotation speed and thus the pump output.
 
-# Realta Scope Tech EBBfocuser
+![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
+
+-------------------
+
+
+-------------------
+
+
+# Original Documentation:
+
+
+-------------------
+
+
+## Realta Scope Tech EBBfocuser
 
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
 
