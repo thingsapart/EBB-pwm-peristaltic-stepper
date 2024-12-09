@@ -1,3 +1,5 @@
+# Work in Progress!
+
 # Realta Scope Tech EBBfocuser adapted to drive a peristaltic pump.
 
 Connect PWM output to EBB36 pin (??). The PWM frequency determines the stepper's rotation speed and thus the pump output.
