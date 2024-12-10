@@ -13,4 +13,5 @@
 
 # List USB devices
 
-`system_profiler SPUSBDataType`
+- `system_profiler SPUSBDataType`
+- FYI -- my EBB36 doesn't support proper USB3 USB-C cables - I have to connect a USB-C => USB3/2 hub and then use a USB2-to-USB-C cable.
