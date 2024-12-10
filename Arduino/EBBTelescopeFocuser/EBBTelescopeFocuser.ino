@@ -7,12 +7,37 @@
 #define D_UART_PIN PA15
 #define D_ENABLE_PIN PD2
 #define D_HEATER_PIN PB13
+#define D_PWM_INPUT_PIN PB7
 
 #define D_DRIVER_ADDRESS 0b00 // PCB has both TMC2209 MS1 and MS2 pins grounded so this is the correct address for that configuration
 #define D_R_SENSE 0.11f // These are the resistance values of the current monitoring resistors as per the PCB datasheet, it has two 0R11 resistors (0.11 Ohm). This is used by the TMC2209 stepper driver to measure the current going to the stepper motor. It has one resistor for each coil of the stepper. 
  
 SoftwareSerial G_TMC_SERIAL (D_UART_PIN, D_UART_PIN);
 Motor MyMotor(&G_TMC_SERIAL, D_R_SENSE, D_DRIVER_ADDRESS);
+
+const unsigned long TIMEOUT = 1000; // 1 millisecond (1000 Hz) 
+
+const byte PWMPin = 3;
+const byte InputPin = 4;
+bool led = false;
+unsigned int counter = 0;
+
+// https://forum.arduino.cc/t/to-read-pwm-signal-with-pulsein/930016/5
+int readPWM(int pin)
+{
+  unsigned long highDuration = pulseIn(pin, HIGH, TIMEOUT); 
+  unsigned long lowDuration = pulseIn(pin, LOW, TIMEOUT);
+
+  // Serial.print(highDuration);
+  // Serial.print(", ");
+  // Serial.print(lowDuration);
+  // Serial.print(" -> ");
+
+  if (highDuration == 0 || lowDuration == 0)
+    return digitalRead(pin) == HIGH ? 255 : 0;
+
+  return (highDuration * 255) / (highDuration + lowDuration);
+}
 
 void setup() {
   // put your setup code here, to run once:
@@ -40,6 +65,12 @@ void setup() {
   
   Serial.begin(9600); // Start serial communication to PC
 
+  // Set up PWM input pin.
+  pinMode(D_PWM_INPUT_PIN, INPUT);
+
+  // LED.
+  pinMode(LED_BUILTIN, OUTPUT);
+
   G_TMC_SERIAL.begin(11520);  // Start serial communication with TMC
   MyMotor.beginSerial(11520); 
   MyMotor.begin();                                                                                                                                                                                                                                                                                                                            // UART: Init SW UART (if selected) with default 115200 baudrate
@@ -47,9 +78,8 @@ void setup() {
   MyMotor.rms_current(MyMotor.current);     // Set motor RMS current, needs to be user configurable, unit is mA
   MyMotor.microsteps(MyMotor.steps);        // Set the micro steps of the motor driver
 
-  MyMotor.en_spreadCycle(false);            // sets stepper to use silent mode
+  MyMotor.en_spreadCycle(true);             // sets stepper to use silent mode
   MyMotor.pwm_autoscale(true);              // Needed for stealthChop
-
 }
 
 void loop() {
@@ -172,6 +202,20 @@ void loop() {
       }
    }
   
+  // HACK until proper rewrite: Keep rolling the target forward, effectively one microstep per PWM signal.
+  MyMotor.SetMoveTarget(MyMotor.MoveTarget + 1);
+  int duty_cycle = readPWM(D_PWM_INPUT_PIN);
+
+  if (counter++ % 100 == 0) {
+    Serial.print("Duty cycle: ");
+    Serial.print(duty_cycle);
+    Serial.print(", ");
+    Serial.println(counter);
+    
+    digitalWrite(LED_BUILTIN, led ? 255 : 0);
+    led = !led;
+  }
+
   // put your main code here, to run repeatedly:
   if(MyMotor.IsMoving == true)
   {

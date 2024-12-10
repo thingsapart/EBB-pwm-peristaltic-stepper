@@ -1,5 +1,6 @@
 #include <EEPROM.h>;
 #include <TMCStepper.h>
+#include <limits.h>
 
 #define D_STEP_PIN PD0
 #define D_UART_PIN PA15
@@ -40,6 +41,12 @@ void Motor::Halt()
 
 void Motor::SetMoveTarget(long Position)
 {
+  if (Position == LONG_MAX) {
+    long diff = LONG_MAX - CurrentPosition;
+    Position = LONG_MIN + diff;
+    CurrentPosition = LONG_MIN;
+  }
+
   if(CurrentPosition != Position)
   {
      IsMoving = true;
