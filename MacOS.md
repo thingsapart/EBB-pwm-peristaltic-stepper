@@ -1,10 +1,11 @@
 # Installation instructions without install STM32CubeProgrammer
 
 1. Follow the regular guide, install Arduino (or VSCode - instructions missing)
-2. Generate a binary
+2. Install dfu-util (`brew install dfu-util` once [homebrew is installed](https://www.brew.sh) )
+3. Generate a binary
     1. Arduino IDE
         - "Menu" > "Sketch" > "Export Compiled Binary"
-3. Flash BIN file
+4. Flash BIN file
     1. Arduino IDE
         -  "Menu" > "Sketch" > "Show Sketch Folder"
         - navigate to shown folder in terminal (eg open Terminal, type `cd ` and drag and drop the folder icon from titlebar onto Terminal)
