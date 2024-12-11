@@ -2,7 +2,9 @@
 
 # PWM-controlled peristaltic pump driver based on BTT EBB36, derived from Realta Scope Tech EBBfocuser.
 
-Connect PWM output to EBB36 pin (??). The PWM frequency determines the stepper's rotation speed and thus the pump output.
+Connect PWM output to a pin on the EBB36 - the default pin is PB9 in the middle of the Probe connector but this can be changed when compiling the firmware. The PWM frequency determines the stepper's rotation speed and thus the pump output.
+
+The maximum stepper revolutions/second and other settings are configurable both in the firmware and via G-Codes if they are enabled at build time.
 
 Works with eg:
 * [Peristaltic Pump _ Nema 17 _ 608 Bearings](https://www.printables.com/model/910253-peristaltic-pump-_-nema-17-_-608-bearings/files) by ZRNNN, or 
