@@ -16,7 +16,7 @@ Klipper supports `[manual_stepper]` but Reprap Firmware does not. It is pretty e
 
 You can for example configure a 3.3V pin on your RRF board as a fan using the GCode command `M950 F10 C"<pin-id>" Q2000` (Fan 10, replace <pin-id> with your pin name) and then control the fan using Duet Web Control or using GCode - `M106 P10 S0.5 H-1` makes it run at 50% of the MOTOR_MAX_RPS setting (4 rev/sec per default, so 2 rps).
 
-`M950 P10 C"<pin-id>" Q2000` and `M42 P10 S0.5` would work the same if adding a fan to RRF and DWC is not desirable.
+Defining the pin as a Gpio pin using `M950 P10 C"<pin-id>" Q2000` and `M42 P10 S0.5` would work the same if adding a fan to RRF and DWC is not desirable.
 
 # EBB36 Focuser Housing
 
