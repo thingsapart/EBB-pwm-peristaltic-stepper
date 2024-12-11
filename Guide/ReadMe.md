@@ -1,16 +1,16 @@
 # Build guide
 
-This is the full build guide for the Realta EBBfocuser.
+This is the mostly original build guide for the Realta EBBfocuser - the EBB-pwm-peristaltic stepper can be built pretty much the same way. You will need to print and install a peristaltic pump on the front of the stepper as well.
 
 ## What you need to buy.
 
 ### Stepper motor
 
-I have used a 23mm thick Nema 17 stepper motor like this 17HS4023. 
+I have used a 38-40mm thick Nema 17 stepper motors for my peristaltic stepper. 
 
 ![Nema 17](../Guide/Images/17HS4023.png)
 
-However, any NEMA stepper motor thicker than this will work but you are limited to 1.5A per phase by the EBB36 stepper motor driver. Even thinner motors will work but you will have a hard time mounting them as the case will foul most mounting brackets. The FreeCAD file containing the parts is included in this repository so can be edited to provide a spacer to pad out the difference in width if needed. 
+However, any NEMA stepper motor thicker than this will work but you are limited to 1.5A per phase by the EBB36 stepper motor driver. The FreeCAD file containing the parts is included in this repository so can be edited to provide a spacer to pad out the difference in width if needed. 
 
 ### BigTreeTech EBB36 
 
