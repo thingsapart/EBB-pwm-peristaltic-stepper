@@ -2,7 +2,7 @@
 
 # PWM-controlled peristaltic pump driver using a BTT EBB36, based on the [Realta Scope Tech EBBfocuser](https://github.com/RealtaScopeTech/Realta-EBBfocuser).
 
-Connect PWM output to a pin on the EBB36 - the default pin is PB9 in the middle of the Probe connector but this can be changed when compiling the firmware. The PWM frequency determines the stepper's rotation speed and thus the pump output.
+Connect a PWM output on your main device to a pin on the EBB36 to control a stepper motor (constant velocity only currently) - this is useful for example to control a stepper for a peristaltic pump using PWM. The default EBB36 input pin is PB9 in the middle of the Probe connector but this can be changed when compiling the firmware. The output PWM duty cycle on the main device determines the stepper's rotation speed and thus the pump output.
 
 The maximum stepper revolutions/second and other settings are configurable both in the firmware and via [G-Codes](https://github.com/thingsapart/EBB-pwm-peristaltic-stepper/tree/main/Arduino#list-of-accepted-commands) if they are enabled at build time.
 
