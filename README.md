@@ -14,6 +14,8 @@ Works with eg:
 
 Klipper supports `[manual_stepper]` but Reprap Firmware does not. It is pretty easy to do PWM on RRF though, so this firmware along with an EBB36 allows one to control an external stepper motor. In this case used to drive a peristaltic pump via a Nema17 stepper, used as a pump for a minimum quantity lubrication system for a small CNC machine.
 
+You can for example configure a 3.3V pin on your RRF board as a fan using the GCode command `M950 F10 C"<pin-id>" Q2000` (Fan 10, replace <pin-id> with your pin name) and then control the fan using Duet Web Control or using GCode - `M106 P10 S0.5 H-1` makes it run at 50% of the MOTOR_MAX_RPS setting (4 rev/sec per default, so 2 rps).
+
 # EBB36 Focuser Housing
 
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
