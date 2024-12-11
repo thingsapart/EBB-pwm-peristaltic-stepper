@@ -10,6 +10,12 @@ Works with eg:
 * [Peristaltic Pump _ Nema 17 _ 608 Bearings](https://www.printables.com/model/910253-peristaltic-pump-_-nema-17-_-608-bearings/files) by ZRNNN, or 
 * [Nema 17 Peristaltic Pump-608 Bearings-cooling water-engine oil-water](https://www.printables.com/model/974385-nema-17-peristaltic-pump-608-bearings-cooling-wate/files) by Michel.
 
+# Why?
+
+Klipper supports `[manual_stepper]` but Reprap Firmware does not. It is pretty easy to do PWM on RRF though, so this firmware along with an EBB36 allows one to control an external stepper motor. In this case used to drive a peristaltic pump via a Nema17 stepper, used as a pump for a minimum quantity lubrication system for a small CNC machine.
+
+# EBB36 Focuser Housing
+
 ![EBB36 Focuser Case](Guide/Images/EBB36FinishedRCA.png)
 
 -------------------
